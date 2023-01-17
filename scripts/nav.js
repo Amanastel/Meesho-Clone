@@ -11,12 +11,16 @@ import WomenWestern from "./data/WomenWestern.js"
 
 
 
-
 let inputSearchEl = document.querySelector(".inputSearch")
 let recentInput = []
 let formInputEl = document.getElementById("inputForm")
 const listofRecentEl = document.querySelector(".listofRecent")
 
+
+document.getElementById("closeSearch").addEventListener("click", () => {
+    inputSearchEl.value = "";
+    document.getElementById("closeSearch").style.display = "none";
+});
 
 
 inputSearchEl.addEventListener("keydown", () => {
@@ -41,7 +45,7 @@ formInputEl.addEventListener("submit", (e) => {
             listofRecentHTMLEl += `
             <div class="recentItem">
                 <div class="recentIcon">
-                     <img src="./img/recent.png"/>
+                     <img src="./images/HomePage/NavBar/recent.png"/>
                 </div>
                 <p>${recentInput[i]}</p>
             </div>

@@ -9,6 +9,7 @@
     </title>
     <link rel="icon" href="./images/meesho_icon.jpg" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/index.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -19,7 +20,7 @@
       <section class="header">
         <div class="headerLeft">
           <div class="logoContainer">
-            <img src="./images/HomePage/NavBar/logo.png" />
+            <a href="index.html"><img src="./images/HomePage/NavBar/logo.png" /></a>
           </div>
 
           <!--Search Box-->
@@ -75,16 +76,31 @@
           <div class="profileAndCart">
             <div class="profileContainer">
               <div class="profileIcon">
-                <img src="./images/HomePage/NavBar/profile.png" />
+                <img src="./images/HomePage/NavBar/profile.png"/>
               </div>
-              <p>Profile</p>
+
+              <!-- Drop Down Sigin/SignUp -->
+
+              <div class="dropdown">
+                <p id="icon-style">Profile</p>
+                <div class="dropdown-options">
+                  <h4>Hello User</h4>
+                  <p>To access your Meesho account</p>
+                  <button class="sign-up">Sign Up</button>
+                  <hr>
+                  <div class="orderIcon">
+                    <img src="./images/HomePage/NavBar/orders.png">
+                    <a href="#">My Orders</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="CartContainer">
               <div class="CartIcon">
                 <img src="./images/HomePage/NavBar/cart.png" />
               </div>
-              <p>Cart</p>
+              <p id="icon-style">Cart</p>
             </div>
           </div>
         </div>
