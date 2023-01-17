@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    #main{
+        width: 100%;
+        height: 1500px;
+        /* border: 3px solid black; */
+    }
+    #main_child{
+        width: 75%;
+        height: 1000px;
+        margin: auto;
+        /* border: 3px solid blue; */
+        margin-top: 3%;
+        display: flex;
+        gap: 20px;
+    }
+    #ethnicwear{
+        width: 70%;
+        margin: auto;
+        height: 40px;
+        
+    }
+    #heading{
+      width: 75%;
+      height:auto;
+      margin: auto;
+      /* border: 3px solid blue; */
+      margin-top: 10%;
+    }
+    #filter_div{
+      width: 250px;
+      height: 800px;
+      /* border: 1px solid black; */
+    }
+    #items{
+      width: 750px;
+      height: 1500px;
+      border: 1px solid red;
+
+    }
+    #sort_by_relevance{
+      width: 100%;
+      height: 60px;
+      font-size: 16px;
+      padding: 10px;
+      background-color: white;
+      border-bottom: 1px solid grey;
+      border-radius: 5px;
+    }
+    #filter_section{
+      width: 100%;
+      height: 699px;
+      font-size: 16px;
+      margin: auto;
+      /* margin-top: 1%; */
+      /* padding: 10px; */
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 5px;
+      
+    }
+    .style{
+      width: 100%;
+      height: 60px;
+      font-size: 16px;
+      padding: 10px;
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+
+
+</style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="heading">
+      <h1>Women Ethnic Wear</h1>
+      &nbsp
+      <h3>Showing 1-20 out of 10000 products</h3>
+    </div>
+    <div id="main_child">
+        <div id="filter_div">
+
+          <!-- Sort by Relevance -->
+          <select name="Sort by: Relevanc" id="sort_by_relevance" >
+            <option value="relevance">Sort by: Relevance</option>
+            <option value="new">New Arrivals</option>
+            <option value="H_to_L">Price(High to Low)</option>
+            <option value="L_to_H">Price(Low to High)</option>
+            <option value="ratings">Ratings</option>
+            <option value="discount">Discount</option>
+          </select> <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+          <div id="fiter_section">
+              <h2>Filter</h2>
+              <h5>1000+ Products</h5>
+
+              <!-- Category -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select name="" id="category" list="tickmarks" class="style">
+                <option value="" >Category</option>
+                <option value="abaya">abaya</option>
+                <option value="blouses">blouses</option>
+                <option value="Capes, Shrugs & Ponchos">Capes, Shrugs & Ponchos</option>
+                <option value="Churidaars">Churidaars</option>
+                <option value="Dupattas">Dupattas</option>
+                <option value="Ethnic Skirts">Ethnic Skirts</option>
+                <option value="Kurta Sets">Kurta Sets</option>
+                <option value="Jackets and Coats">Jackets and Coats</option>
+                <option value="Kurtis">Kurtis</option>
+                <option value="Patiala">Patiala</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <!-- fabric -->
+
+              <select name="" id="fabric" class="style">
+                <option value="">Select Fabric</option>
+                <option value="Chanderi Silk">Chanderi Silk</option>
+                <option value="Art Silk">Art Silk</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Acrylic">Acrylic</option>
+                <option value="Cotton Linen">Cotton Linen</option>
+                <option value="Chiffon">Chiffon</option>
+                <option value="Cotton Blend">Cotton Blend</option>
+                <option value="Cotton Linen">Cotton Linen</option>
+                <option value="Chanderi Cotton">Chanderi Cotton</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <!-- Color -->
+
+              <select name="" id="color" class="style">
+                <option value="">Color</option>
+                <option value="blur">blue</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="white">white</option>
+                <option value="yellow">yellow</option>
+                <option value="pink">pink</option>
+                <option value="purple">purple</option>
+                <option value="grey">grey</option>
+                <option value="orange">orange</option>
+                <option value="violet">violet</option>
+              </select>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+             <!-- Price -->
+
+              <select name="" id="by_price" class="style">
+                <option value="">By Price</option>
+                <option value="under">under ₹ 149</option>
+                <option value="under">under ₹ 199</option>
+                <option value="under">under ₹ 249</option>             
+                <option value="under">under ₹ 299</option>
+                <option value="under">under ₹ 349</option>
+                <option value="under">under ₹ 399</option>
+                <option value="under">under ₹ 449</option>
+                <option value="under">under ₹ 499</option>
+                <option value="under">under ₹ 99</option>
+                <option value="under">₹ 0 - ₹ 99</option>
+                <option value="under">₹ 100-₹ 149</option>
+                <option value="under">₹ 150-₹ 199</option>
+                
+                <!-- <option value="under">₹ 0-₹ 99</option>  -->
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
+               <!-- Occassion -->
+
+              <select name="" id="occassion" class="style">
+                <option value="">Occassion</option>
+                <option value="">Festive</option>
+
+              </select>
+
+              <!-- Discount -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <select name="" id="discount" class="style">
+                <option value="Discount">Discount</option>
+                <option value="10">10% and above</option>
+                <option value="20">20% and above</option>
+                <option value="30">30% and above</option>
+                <option value="40">40% and above</option>
+                <option value="50">50% and above</option>
+                <option value="60">60% and above</option>
+                <option value="All Discounted">All Discounted</option>
+                <option value="Deals">Deals</option>
+              </select>
+               
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <!-- Ratings -->
+
+              <select name="" id="rating" class="style">
+                <option value="">Ratings</option>
+                <option value="2">2.0</option>
+                <option value="3">3.0</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4.0</option>
+                <option value="M-trust">M-Trusted</option>
+              </select>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <select name="" id="size" class="style">
+                <option value="">Size</option>
+                <option value="1.5">1.5 meters</option>
+                <option value="1.75">1.75 meters</option>
+                <option value="10-16">10-16 years</option>
+                <option value="10X">10XL</option>
+                <option value="2m">2 meters</option>
+                <option value="2.2m">2.2 meters</option>
+                <option value="2.5">2.5 meters</option>
+                <option value="2.7">2.7 meters</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+              </select>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <select name="" id="combo" class="style">
+                <option value="">Combos</option>
+                <option value="1">Pack Of 1</option>
+                <option value="2">Pack Of 2</option>
+                <option value="3">Pack Of 3</option>
+                <option value="4">Pack Of 4</option>
+                <option value="5">Pack Of 5</option>
+                <option value="single">Single</option>
+              </select>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <select name="" id="pattern" class="style">
+                <option value="">Print Or Pattern Type</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <select name="" id="border" class="style">
+                <option value="">Border</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+
+          </div>
+        </div>
+        <div id="items"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
