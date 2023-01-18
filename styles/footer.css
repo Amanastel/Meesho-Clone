@@ -66,4 +66,27 @@ p span{
     cursor: pointer;
 }
 
-
+/* for small screen */
+@media only screen and (min-width: 100px) and (max-width: 450px) {
+     .footer_main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-right: 600px;
+    } 
+    #shadow{
+        margin-top: 250px;
+    }
+}
+/* for medium screen */
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+    .footer_main{
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       margin-right: 600px;
+   } 
+   #shadow{
+       margin-top: 100px;
+   }
+}
