@@ -126,8 +126,8 @@
 
               <!-- fabric -->
 
-              <select name="" id="fabric" class="style">
-                <option value="">Select Fabric</option>
+              <details name="" id="fabric" class="style">
+                <!-- <option value="">Select Fabric</option>
                 <option value="Chanderi Silk">Chanderi Silk</option>
                 <option value="Art Silk">Art Silk</option>
                 <option value="Bamboo">Bamboo</option>
@@ -136,8 +136,12 @@
                 <option value="Chiffon">Chiffon</option>
                 <option value="Cotton Blend">Cotton Blend</option>
                 <option value="Cotton Linen">Cotton Linen</option>
-                <option value="Chanderi Cotton">Chanderi Cotton</option>
-              </select>
+                <option value="Chanderi Cotton">Chanderi Cotton</option> -->
+                <input type="radio" name="Chanderi Silk"><span>Chanderi Silk</span><br>
+                <input type="radio" name="Art Silk"><span>Art Silk</span><br>
+                <input type="radio" name="Cotton"><span>Cotton</span><br>
+                <input type="radio" name="Cotton Blend"><span>Cotton Blend</span><br>
+              </details>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
               <!-- Color -->
@@ -274,10 +278,19 @@
 
           </div>
         </div>
-        <div id="items"></div>
+
+
+        <!-- *********************left section for Itmes*********************-->
+        <div id="items">
+        </div>
     </div>
   </div>
 </body>
+<script>
+  function fetchItem(){
+    fetch
+  }
+</script>
 </html>
 
 
