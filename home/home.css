@@ -1,0 +1,126 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#main{
+    width: auto;
+    height: auto;
+    margin-top: 18%;
+    /* border: 1px solid black; */
+}
+   #navmain{
+    width: 100%;
+    height: auto;
+    /* border-bottom: 1px solid black; */
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+   }
+   #navbar{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid lightgray;
+    margin-top: 0%;
+    background-color: white;
+    display: flex;
+   }
+   #dropdown{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    background-color: white;
+   }
+#firstAd{
+    width: 60%;
+    height: 400px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10%;
+}
+#top_categories{
+    width: 60%;
+    height: 120px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 3%;
+}
+
+#secondAd{
+    width: 60%;
+    height: 450px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#thirdAd{
+    width: 60%;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+}
+#fourthAd{
+    width: 60%;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+}
+#fifthAd{
+    width: 60%;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* CSS part for mid-Section *********************************/
+
+#heading{
+ width: 75%;
+ height: auto;
+ margin: auto;
+ text-align: left;   
+ margin-top: 3%;
+}
+
+#mid-section{
+    width: 75%;
+    height: 1000px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    gap: 15px;
+}
+#filter-div{
+    width: 24%;
+    height: 900px;
+    border: 1px solid blue;
+}
+#item-div{
+    width: 75%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+#leftside{
+    width: 45%;
+    height: 90%;
+    border: 1px solid black;
+}
+#leftside>img{
+    width: auto;
+    height: 100%;
+}
+#leftside>input{
+    width:;
+}
+
+#rightside{
+    width: 45%;
+    height: 90%;
+    border: 1px solid black;
+}
