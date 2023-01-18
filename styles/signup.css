@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#CardContainer {
+padding-top: 30px;
+  display: grid;
+  width: 100%;
+  background: linear-gradient(
+    rgb(253, 233, 242) 0%,
+    rgb(253, 240, 232) 100%,
+    rgb(253, 240, 232) 100%
+  );
+}
+
+#main-card {
+border-radius: 10px;
+height: 750px;
+  width: 450px;
+  margin: auto;
+  /* border: 2px solid red; */
+  overflow-y: auto;
+  background-color: white;
+  
+}
+#main-card-otp{
+    border-radius: 10px;
+    /* height: 750px; */
+      width: 450px;
+      margin: auto;
+      /* border: 2px solid red; */
+      overflow-y: auto;
+      background-color: white;
+      /* padding-bottom: 30px; */
+}
+
+#image img {
+  width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+#inner-card {
+  margin: auto;
+}
+
+#inner-card-h6{
+    display: flex;
+}
+#inner-card-h6 p{
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    height: 50px;
+    margin-top: 30px;
+}
+#inner-card-h6 h6{
+  color: rgb(51, 51, 51);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Mier bold";
+  margin: 0px;
+  padding: 0px;
+  padding-left: 45px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+#inner-card-country {
+  display: grid;
+  grid-template-columns: repeat(1);
+  
+}
+
+
+#inner-card-country-c {
+  color: rgb(104, 102, 102);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Mier demi";
+  margin: 0px;
+  padding: 8px 0px 7px;
+  padding-left: 45px;
+}
+#inner-card-number {
+    cursor: pointer;
+    padding-left: 45px;
+    display: grid;
+    grid-template-columns: repeat(1);
+    
+  }
+#inner-card-country-n{
+    color: rgb(244, 51, 151);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier bold";
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+#inner-card-num {
+  text-align: center;
+  /* border: 2px solid red; */
+
+  text-align: center;
+}
+#inner-card-num-varify-inner{
+    margin-top: 40px;
+    margin-left: 45px;
+}
+#inner-card-num-varify-inner input{
+    height: 3.25rem;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-width: 0px 0px 1px;
+    border-color: rgb(153, 153, 153);
+    /* border-style: solid; */
+    outline: none;
+    width: 90%;
+    text-align: center;
+}
+#inner-card-phn {
+  /* color: rgb(153, 153, 153); */
+ 
+  padding-top: 30px;
+  width: 70%;
+  font-size: 16px;
+  margin: auto;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  padding-left: 24px;
+}
+#inner-card-pas{
+  width: 70%;
+  font-size: 16px;
+  margin: auto;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  padding-left: 24px;
+  padding-top: 30px;
+}
+#inner-card-num-resendotp{
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    padding-left: 44px;
+}
+#otp-sec{
+    color: rgb(244, 51, 151);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier bold";
+    margin: 0px;
+    padding: 0px;
+}
+
+#mid-card-btn {
+  margin: auto;
+  width: 80%;
+}
+
+#mid-card-btn-btn {
+  width: 100%;
+  font-size: 40px;
+  cursor: pointer;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.0015em;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background: rgb(244, 51, 151);
+  border: none;
+  padding: 12px;
+  margin-top: 40px;
+}
+
+#last-card {
+  height: 150px;
+  display: grid;
+  
+  
+}
+#last-card p{
+    grid-template-rows: repeat(1, 5fr);
+}
+#last-card-2{
+padding-bottom: 40px;
+text-align: center;
+}
