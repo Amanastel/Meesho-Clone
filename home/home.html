@@ -8,23 +8,196 @@
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div id="navmain">
-        <div class="navbar" id="navbar">
-            <div id="leftside">
-            <img src="heaven.jpeg" alt="">
-            <input type="text" placeholder="Try Saree,Kurti Or Search by Product Code" id="search">
-            </div>
-            <div id="rightside">
-                
-            </div>
-        </div>
-        <div class="navbar" id="dropdown"></div>
-       </div>
-    <div id="main">
+
+      <div id="navmain">
+        <header>
+            <section class="header">
+              <div class="headerLeft">
+                <div class="logoContainer">
+                  <a href="index.html"><img src="./heaven.jpeg" /></a>
+                </div>
+      
+                <!--Search Box-->
+                <div class="searchInputContainer">
+                  <div class="searchIcon">
+                    <img src="heaven.jpeg" />
+                  </div>
+                  <form action="" id="inputForm">
+                    <input
+                      type="text"
+                      placeholder="Try Saree, Kurti or Search by Product Code"
+                      class="inputSearch"
+                    />
+                  </form>
+                  <div class="inputCloseSearch">
+                    <i class="fa-solid fa-xmark" id="closeSearch"></i>
+                  </div>
+      
+                  <div class="searchRecentProduct">
+                    <h3>Recent Searches</h3>
+                    <div class="listofRecent"></div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="headerRight">
+                <div class="downloadContainer">
+                  <div class="mobileIcon">
+                    <img src="./phone.png" />
+                  </div>
+                  <p>Download App</p>
+      
+                  <div class="downloadHoverBtnContainer">
+                    <h3>Download From</h3>
+      
+                    <a href="" class="downloadBtn">
+                      <img src="https://images.meesho.com/images/pow/playstore-icon-big.webp"/>
+                    </a>
+                    <a href="" class="downloadBtn">
+                      <img
+                        src="https://images.meesho.com/images/pow/appstore-icon-big.webp"
+                      />
+                    </a>
+                  </div>
+                </div>
+      
+                <div class="becomeSupplierContainer">
+                  <p>Become a Supplier</p>
+                </div>
+      
+                <div class="profileAndCart">
+                  <div class="profileContainer">
+                    <div class="profileIcon">
+                      <img src="./profile.jpg"/>
+                    </div>
+      
+                    <!-- Drop Down Sigin/SignUp -->
+      
+                    <div class="dropdown">
+                      <p id="icon-style">Profile</p>
+                      <div class="dropdown-options">
+                        <h4>Hello User</h4>
+                        <p>To access your Meesho account</p>
+                        <button class="sign-up">Sign Up</button>
+                        <hr>
+                        <div class="orderIcon">
+                          <img src="cart2.png">
+                          <a href="#">My Orders</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="CartContainer">
+                    <div class="CartIcon">
+                      <img src="./cart2.png" />
+                    </div>
+                    <p id="icon-style">Cart</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--Drop-Down Menu-->
+            <nav>
+              <ul>
+                <li>
+                  Women Ethnic
+                  <div class="subMenu">
+                    <div id="womenEthic" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Women Western
+                  <div class="subMenu">
+                    <div id="womenWestern" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Men
+                  <div class="subMenu">
+                    <div id="men" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Kids
+                  <div class="subMenu">
+                    <div id="kids" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Home & Kitchen
+                  <div class="subMenu">
+                    <div id="HomeAndKitchen" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Beauty & Health
+                  <div class="subMenu">
+                    <div id="beautyAndHealth" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Jewellery & Accessories
+                  <div class="subMenu">
+                    <div id="JewelleryAndAccessories" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Bags & Footwear
+                  <div class="subMenu">
+                    <div id="BagsFootWarId" class="submenuList"></div>
+                  </div>
+                </li>
+                <li>
+                  Electronics
+                  <div class="subMenu">
+                    <div id="ElectronicsId" class="submenuList"></div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </header>
+    
+      </div>     
+
+        <div id="main">
         <!-- here the "Ad" refers to the banner or advertisement -->
-        <div id="firstAd"></div>   
-        <div id="top_categories"></div>                        
-        <div id="secondAd"></div>
+        <div id="firstAd">
+          <div id="left1">
+            <h1>Lowest Prices <br>
+              Best Quality Shopping</h1>
+              <div id="specs">
+                <div class="a">
+                  <div><img src="./freeDelivery.png" alt=""></div>
+                  <h5>Free <br> Delivery</h5>
+                </div>
+                <div class="a">
+                  <div><img src="./cod.svg" alt=""></div>
+                  <h5>Cash On <br> Delivery</h5>
+                </div>
+                <div class="a">
+                  <div><img src="./easyReturns.svg" alt=""></div>
+                  <h5>Easy <br> Returns</h5>
+                </div>
+              </div>
+              <button class="button">
+                Download the Heaven App
+              </button>
+          </div>
+          <div id="right1">
+            <img src="./lowestPrice.webp" alt="">
+          </div>
+        </div>   
+        <div id="top_categories">
+          <div></div>
+          <h1>Top Categories to choose from</h1>
+          <div></div>
+        </div>                        
+        <div id="secondAd">
+         <a href=""> <img id="womenswear" src="./women's wear.webp" alt=""></a>
+         <a href=""><img id="menswear" src="./men's wear.webp" alt=""></a>
+        <a href=""><img id="kidswear" src="./kid's wear.webp" alt=""></a>
+        </div>
         <div id="thirdAd"></div>
         <div id="fourthAd"></div>
         <div id="fifthAd"></div>
@@ -40,4 +213,5 @@
 
     </div>
 </body>
+<script src="./home.js"></script>
 </html>
