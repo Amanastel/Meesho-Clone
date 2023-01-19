@@ -737,9 +737,9 @@
    }
 
    .card-list{
-     border: 1px solid lightgray;
+     border: 1px solid black;
      border-radius: 5px;
-     /* background-color: bisque; */
+     background-color: bisque;
    }
 
    .image-div{
@@ -764,13 +764,5 @@
 
    .general{
     margin-top: 20px;
-    color: gray;
-   }
-
-
-   .rating-div{
-      border: 1px solid black;
-      color: white;
-      border-radius: 5px;
-      background-color: green;
+    color: white;
    }
