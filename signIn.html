@@ -193,7 +193,10 @@
               timer: 1500,
             });
             //Review
-            setTimeout(window.location.href = "index.html",2000);
+            // setTimeout(window.location.href = "index.html",2000);
+            setTimeout(() => {
+              window.location.href = "index.html";
+            },0);
           })
           .catch((error) => {
             // The write failed...

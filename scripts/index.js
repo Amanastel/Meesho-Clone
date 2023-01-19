@@ -1,7 +1,9 @@
 let main_section = document.querySelector(".right-div")
 
 
+
 let url = "https://astel-api.vercel.app/alldata"
+
 function fetchData(){
 fetch(url)
 .then((res)=>{
