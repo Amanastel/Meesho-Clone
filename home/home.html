@@ -34,10 +34,158 @@
         <h1>Products For You</h1>
        </div>
        <div id="mid-section">
-         <div id="filter-div"></div>
-         <div id="item-div"></div>
-       </div>
+        <div id="filter-div"  >
+            <!-- sorting part start -->
+            <div class="selector" id="selectField">
+                <p id="selectText">SortBy:Relevance</p>
+                <img id="arrowIcon" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="list" class="hide">
+                <li class="options"><p>Relevance</p></li>
+                <li class="options"><p>New Arrivals</p></li>
+                <li class="options"><p>Price(High to Low)</p></li>
+                <li class="options"><p>Price(Low to High)</p></li>
+                <li class="options">Ratings</li>
+                <li class="options">Discount</li>
+            </ul> 
+            <!-- sorting part end -->
 
-    </div>
+            <!-- filter part start -->
+            <div id="filter">
+                <div id="filter_one">
+                    <h4>FILTERS</h4>
+                    <P>10000+ Products</P><hr>
+                </div>
+
+                <div class="category" id="categoryField">
+                        <h4 id="categoryText">Category</h4>
+                        <img id="C_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+                </div>
+                <ul id="C_list" class="C_hide">
+                    <li class="C_options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Support</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Analog Watches</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Anklets & Toe Rings</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Appliance Covers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Ayurvedic</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Ayurvedic Products</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Bangles & Bracelets</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Battery</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Bedsheets</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Blouses</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Bluetooth Headphones</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    <li class="options" style="display: flex;">
+                        <input type="checkbox">
+                        <p style="margin-left: 5px;">Accupressure Rollers</p>
+                    </li>
+                    
+                </ul><hr>
+                
+            </div>
+            
+        </div>
+     <div id="item-div"></div>
+   </div>
+
+</div>
 </body>
 </html>
+<script>
+var selectField =  document.querySelector("#selectField");
+var selectText =  document.querySelector("#selectText");
+var options = document.getElementsByClassName("options");
+var list = document.getElementById("list");
+var arrowIcon = document.getElementById("arrowIcon");
+
+selectField.onclick = function(){
+    list.classList.toggle("hide");
+    arrowIcon.classList.toggle("rotate");
+}
+
+for(option of options){
+    option.onclick = function(){
+        selectText.innerHTML = this.textContent;
+        list.classList.toggle("hide");
+        arrowIcon.classList.toggle("rotate");
+    }
+}
+
+var categoryField =  document.querySelector("#categoryField");
+var categoryText =  document.querySelector("#CategoryText");
+var C_options = document.getElementsByClassName("C_options");
+var C_list = document.getElementById("C_list");
+var C_arrow = document.getElementById("C_arrow");
+
+categoryField.onclick = function(){
+    C_list.classList.toggle("C_hide");
+    C_arrow.classList.toggle("rotate");
+}
+
+// for(C_option of options){
+//     C_option.onclick = function(){
+//         CategoryText.innerHTML = this.textContent;
+//         list.classList.toggle("C_hide");
+//         C_arrow.classList.toggle("rotate");
+//     }
+//}
+</script> 
