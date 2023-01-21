@@ -1,5 +1,5 @@
 
-*{
+/* *{
     padding: 0%;
     margin: 0%;
 }
@@ -8,7 +8,7 @@
     height: auto;
     margin-top: 18%;
     /* border: 1px solid black; */
-}
+/* }
    #navmain{
     width: 100%;
     height: auto;
@@ -2190,4 +2190,4 @@ hr{
 }
 .rotate{
     transform: rotate(180deg);
-}
+} */

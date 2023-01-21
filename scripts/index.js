@@ -27,7 +27,7 @@ fetch(url)
     displayData(global)
 })
 }
-
+// let localData=localStorage.setItem("inner-div",JSON.)
 
 
 function displayData(data){
@@ -140,4 +140,121 @@ women.addEventListener("click",()=>{
     // displayData(global)
 })
 })
+
+
+let priceone=document.getElementById("priceone");
+priceone.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=149;
+   })
+   displayData(newData)
+})
+
+let pricetwo=document.getElementById("pricetwo");
+pricetwo.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=249;
+   })
+   displayData(newData)
+})
+
+let pricethree=document.getElementById("pricethree");
+pricethree.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=359;
+   })
+   displayData(newData)
+})
+
+
+let pricefour=document.getElementById("pricefour");
+pricefour.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=459;
+   })
+   displayData(newData)
+})
+
+
+let pricefive=document.getElementById("pricefive");
+pricefive.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=559;
+   })
+   displayData(newData)
+})
+
+let pricesix=document.getElementById("pricesix");
+pricesix.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=659;
+   })
+   displayData(newData)
+})
+
+let priceseven=document.getElementById("priceseven");
+priceseven.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=759;
+   })
+   displayData(newData)
+})
+
+let priceeight=document.getElementById("priceeight");
+priceeight.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=859;
+   })
+   displayData(newData)
+})
+
+let pricenine=document.getElementById("pricenine");
+pricenine.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.price<=959 && ele.price>=859;
+   })
+   displayData(newData)
+})
+
+let rateone=document.getElementById("rateone");
+rateone.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.rating>=2.0;
+   })
+   displayData(newData)
+})
+
+let ratetwo=document.getElementById("ratetwo");
+ratetwo.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.rating>=3.0;
+   })
+   displayData(newData)
+})
+
+let ratethree=document.getElementById("ratethree");
+ratethree.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.rating>=3.5;
+   })
+   displayData(newData)
+})
+
+let ratefour=document.getElementById("ratefour");
+ratefour.addEventListener("click",()=>{
+   let newData=global.filter((ele,inex)=>{
+        return ele.rating>=4.0;
+   })
+   displayData(newData)
+})
+
+// let MT=document.getElementById("M-T");
+// MT.addEventListener("click",()=>{
+//    let newData=global.filter((ele,inex)=>{
+//         return ele.rating===M-Trusted;
+//    })
+//    displayData(newData)
+// })
+
+
 
