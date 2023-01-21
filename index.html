@@ -1,386 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Online Shopping Site for Fashion, Electronics, Home & More | Meesho
-    </title>
-    <link rel="icon" href="./images/meesho_icon.jpg" />
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="styles\footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-  </head>
-  <body>
-    <header>
-      <section class="header">
-        <div class="headerLeft">
-          <div class="logoContainer">
-            <a href="index.html"><img src="./images/HomePage/NavBar/logo.png" /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Online Shopping Site for Fashion, Electronics, Home & More | Meesho
+  </title>
+  <link rel="icon" href="./images/meesho_icon.jpg" />
+  <link rel="stylesheet" href="./styles/navbar.css" />
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="styles\footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <section class="header">
+      <div class="headerLeft">
+        <div class="logoContainer">
+          <a href="index.html"><img src="./images/HomePage/NavBar/logo.png" /></a>
+        </div>
+
+        <!--Search Box-->
+        <div class="searchInputContainer">
+          <div class="searchIcon">
+            <img src="./images/HomePage/NavBar/search.png" />
+          </div>
+          <form action="" id="inputForm">
+            <input type="text" placeholder="Try Saree, Kurti or Search by Product Code" class="inputSearch" />
+          </form>
+          <div class="inputCloseSearch">
+            <i class="fa-solid fa-xmark" id="closeSearch"></i>
           </div>
 
-          <!--Search Box-->
-          <div class="searchInputContainer">
-            <div class="searchIcon">
-              <img src="./images/HomePage/NavBar/search.png" />
-            </div>
-            <form action="" id="inputForm">
-              <input
-                type="text"
-                placeholder="Try Saree, Kurti or Search by Product Code"
-                class="inputSearch"
-              />
-            </form>
-            <div class="inputCloseSearch">
-              <i class="fa-solid fa-xmark" id="closeSearch"></i>
-            </div>
+          <div class="searchRecentProduct">
+            <h3>Recent Searches</h3>
+            <div class="listofRecent"></div>
+          </div>
+        </div>
+      </div>
 
-            <div class="searchRecentProduct">
-              <h3>Recent Searches</h3>
-              <div class="listofRecent"></div>
-            </div>
+      <div class="headerRight">
+        <div class="downloadContainer">
+          <div class="mobileIcon">
+            <img src="./images/HomePage/NavBar/mobile.png" />
+          </div>
+          <p>Download App</p>
+
+          <div class="downloadHoverBtnContainer">
+            <h3>Download From</h3>
+
+            <a href="" class="downloadBtn">
+              <img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" />
+            </a>
+            <a href="" class="downloadBtn">
+              <img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" />
+            </a>
           </div>
         </div>
 
-        <div class="headerRight">
-          <div class="downloadContainer">
-            <div class="mobileIcon">
-              <img src="./images/HomePage/NavBar/mobile.png" />
+        <div class="becomeSupplierContainer">
+          <p>Become a Supplier</p>
+        </div>
+
+        <div class="profileAndCart">
+          <div class="profileContainer">
+            <div class="profileIcon">
+              <img src="./images/HomePage/NavBar/profile.png" />
             </div>
-            <p>Download App</p>
 
-            <div class="downloadHoverBtnContainer">
-              <h3>Download From</h3>
+            <!-- Drop Down Sigin/SignUp -->
 
-              <a href="" class="downloadBtn">
-                <img
-                  src="https://images.meesho.com/images/pow/playstore-icon-big.webp"
-                />
-              </a>
-              <a href="" class="downloadBtn">
-                <img
-                  src="https://images.meesho.com/images/pow/appstore-icon-big.webp"
-                />
-              </a>
-            </div>
-          </div>
+            <div class="dropdown">
+              <p id="icon-style">Profile</p>
+              <div class="dropdown-options">
+                <h4>Hello User</h4>
+                <p>To access your Meesho account</p>
+                <a href="/signup.html"><button class="sign-up"> Sign Up</button></a>
 
-          <div class="becomeSupplierContainer">
-            <p>Become a Supplier</p>
-          </div>
-
-          <div class="profileAndCart">
-            <div class="profileContainer">
-              <div class="profileIcon">
-                <img src="./images/HomePage/NavBar/profile.png"/>
-              </div>
-
-              <!-- Drop Down Sigin/SignUp -->
-
-              <div class="dropdown">
-                <p id="icon-style">Profile</p>
-                <div class="dropdown-options">
-                  <h4>Hello User</h4>
-                  <p>To access your Meesho account</p>
-                  <a href="/signup.html"><button class="sign-up"> Sign Up</button></a>
-                 
-                  <hr>
-                  <div class="orderIcon">
-                    <img src="./images/HomePage/NavBar/orders.png">
-                    <a href="#">My Orders</a>
-                  </div>
+                <hr>
+                <div class="orderIcon">
+                  <img src="./images/HomePage/NavBar/orders.png">
+                  <a href="#">My Orders</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="CartContainer">
-              <div class="CartIcon">
-                <img src="./images/HomePage/NavBar/cart.png" />
-              </div>
-              <p id="icon-style">Cart</p>
+          <div class="CartContainer">
+            <div class="CartIcon">
+              <img src="./images/HomePage/NavBar/cart.png" />
             </div>
+            <p id="icon-style">Cart</p>
           </div>
         </div>
-      </section>
-      <!--Drop-Down Menu-->
-      <nav >
+      </div>
+    </section>
+    <!--Drop-Down Menu-->
+    <nav>
 
-        <ul >
-          <li>
-            Women Ethnic
-            <div class="subMenu">
-              <div id="womenEthic" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Women Western
-            <div class="subMenu">
-              <div id="womenWestern" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Men
-            <div class="subMenu">
-              <div id="men" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Kids
-            <div class="subMenu">
-              <div id="kids" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Home & Kitchen
-            <div class="subMenu">
-              <div id="HomeAndKitchen" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Beauty & Health
-            <div class="subMenu">
-              <div id="beautyAndHealth" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Jewellery & Accessories
-            <div class="subMenu">
-              <div id="JewelleryAndAccessories" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Bags & Footwear
-            <div class="subMenu">
-              <div id="BagsFootWarId" class="submenuList"></div>
-            </div>
-          </li>
-          <li>
-            Electronics
-            <div class="subMenu">
-              <div id="ElectronicsId" class="submenuList"></div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!--Lowest Price Div-->
+      <ul>
+        <li>
+          Women Ethnic
+          <div class="subMenu">
+            <div id="womenEthic" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Women Western
+          <div class="subMenu">
+            <div id="womenWestern" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Men
+          <div class="subMenu">
+            <div id="men" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Kids
+          <div class="subMenu">
+            <div id="kids" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Home & Kitchen
+          <div class="subMenu">
+            <div id="HomeAndKitchen" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Beauty & Health
+          <div class="subMenu">
+            <div id="beautyAndHealth" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Jewellery & Accessories
+          <div class="subMenu">
+            <div id="JewelleryAndAccessories" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Bags & Footwear
+          <div class="subMenu">
+            <div id="BagsFootWarId" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Electronics
+          <div class="subMenu">
+            <div id="ElectronicsId" class="submenuList"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Lowest Price Div-->
     <div class="lowestpriceContainer">
       <div class="lowestPrice_text">
-          <h1>Lowest Prices </h1>
-          <h1>Best Quality Shopping</h1>
-          <div class="lowestPriceWhay">
-              <div class="lowestPriceItem">
-                  <div class="lowestPrice_icon">
-                      <img src="./images/HomePage/Main/freeDelivery.png"/>
-                  </div>
-                  <p>Free Delivery</p>
-              </div>
-
-              <div class="lowestPriceItem">
-                  <div class="lowestPrice_icon">
-                      <img src="./images/HomePage/Main/cod.png"/>
-                  </div>
-                  <p>Cash on Delivery</p>
-              </div>
-              <div class="lowestPriceItem">
-                  <div class="lowestPrice_icon">
-                      <img src="./images/HomePage/Main/easyReturns.png"/>
-                  </div>
-                  <p>Easy Returns</p>
-              </div>
+        <h1>Lowest Prices </h1>
+        <h1>Best Quality Shopping</h1>
+        <div class="lowestPriceWhay">
+          <div class="lowestPriceItem">
+            <div class="lowestPrice_icon">
+              <img src="./images/HomePage/Main/freeDelivery.png" />
+            </div>
+            <p>Free Delivery</p>
           </div>
 
-          <button class="downloadApp_contianer">
-              <div class="downloadAppIcon">
-                  <img src="./images/HomePage/Main/playstore.png"/>
-              </div>
-              <p>Download the Meesho App</p>
-          </button>
+          <div class="lowestPriceItem">
+            <div class="lowestPrice_icon">
+              <img src="./images/HomePage/Main/cod.png" />
+            </div>
+            <p>Cash on Delivery</p>
+          </div>
+          <div class="lowestPriceItem">
+            <div class="lowestPrice_icon">
+              <img src="./images/HomePage/Main/easyReturns.png" />
+            </div>
+            <p>Easy Returns</p>
+          </div>
+        </div>
+
+        <button class="downloadApp_contianer">
+          <div class="downloadAppIcon">
+            <img src="./images/HomePage/Main/playstore.png" />
+          </div>
+          <p>Download the Meesho App</p>
+        </button>
 
       </div>
       <div class="lowestPrice_image">
-          <img src="./images/HomePage/Main/banner-1.jpg" />
+        <img src="./images/HomePage/Main/banner-1.jpg" />
       </div>
-  </div>
+    </div>
 
 
-  <!--Top Categories To Choose-->
-  <div class="topCategoriesFrom">
+    <!--Top Categories To Choose-->
+    <div class="topCategoriesFrom">
       <div class="topCategoriesHeading">
-          <span class="horizontalLine"></span>
-          <h1>Top Categories to choose from</h1>
-          <span class="horizontalLine"></span>
+        <span class="horizontalLine"></span>
+        <h1>Top Categories to choose from</h1>
+        <span class="horizontalLine"></span>
       </div>
       <div class="topCategoreisImage">
-          <img src="./images/HomePage/Main/banner-2.1.png" />
-          <img src="./images/HomePage/Main/banner-2.2.png" />
-          <img src="./images/HomePage/Main/banner-2.3.png"/>
+        <img src="./images/HomePage/Main/banner-2.1.png" />
+        <img src="./images/HomePage/Main/banner-2.2.png" />
+        <img src="./images/HomePage/Main/banner-2.3.png" />
       </div>
 
       <div class="essentialContaienr">
-          <img src="./images/HomePage/Main/banner-3.1.png" class="essen-btn"/>
+        <img src="./images/HomePage/Main/banner-3.1.png" class="essen-btn" />
 
-          <div class="essential_item">
-              <img src="./images/HomePage/Main/banner-3.2.png"/>
-              <img src="./images/HomePage/Main/banner-3.3.png"/>
-          </div>
+        <div class="essential_item">
+          <img src="./images/HomePage/Main/banner-3.2.png" />
+          <img src="./images/HomePage/Main/banner-3.3.png" />
+        </div>
 
-          <div class="essential_item">
-              <img src="./images/HomePage/Main/banner-3.4.png"/>
-              <img src="./images/HomePage/Main/banner-3.5.png"/>
-          </div>
+        <div class="essential_item">
+          <img src="./images/HomePage/Main/banner-3.4.png" />
+          <img src="./images/HomePage/Main/banner-3.5.png" />
+        </div>
 
-          <div class="essential_item">
-              <img src="./images/HomePage/Main/banner-3.6.png"/>
-              <img src="./images/HomePage/Main/banner-3.7.png"/>
-          </div>
+        <div class="essential_item">
+          <img src="./images/HomePage/Main/banner-3.6.png" />
+          <img src="./images/HomePage/Main/banner-3.7.png" />
+        </div>
 
       </div>
       <div class="essentialContaienr1">
         <div class="essential_item1">
           <h2 class="resell1">Become a Reseller and</h2>
-        <h2 class="resell2">Start your Online Business with Zero Investment</h2>
-        <div>
-          <img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" alt="Error">
-          <img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" alt="Error">
-        </div>
+          <h2 class="resell2">Start your Online Business with Zero Investment</h2>
+          <div>
+            <img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" alt="Error">
+            <img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" alt="Error">
+          </div>
         </div>
       </div>
       <div class="Products4u">
-        <h1 >Products For You</h1>
+        <h1>Products For You</h1>
       </div>
-      
+
       <div class="main-div">
         <div class="left-div">
-         <!-- sorting part start -->
+          <!-- sorting part start -->
           <div class="selector" id="selectField">
             <p id="selectText">SortBy:Relevance</p>
             <img id="arrowIcon" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
           </div>
-            <ul id="list" class="hide">
-              <li class="options" id="as_same"><p>Relevance</p></li>
-              <li class="options" id="new"><p>New Arrivals</p></li>
-              <li class="options" id="H_L"><p>Price(High to Low)</p></li>
-              <li class="options" id="L_H"><p>Price(Low to High)</p></li>
-              <li class="options" id="rat">Ratings</li>
-              <li class="options" id="percentage">Discount</li>
-            </ul> 
+          <ul id="list" class="hide">
+            <li class="options" id="as_same">
+              <p>Relevance</p>
+            </li>
+            <li class="options" id="new">
+              <p>New Arrivals</p>
+            </li>
+            <li class="options" id="H_L">
+              <p>Price(High to Low)</p>
+            </li>
+            <li class="options" id="L_H">
+              <p>Price(Low to High)</p>
+            </li>
+            <li class="options" id="rat">Ratings</li>
+            <li class="options" id="percentage">Discount</li>
+          </ul>
           <!-- sorting part end -->
 
-          
+
 
           <!-- filter part start -->
           <div id="filter">
             <div id="filter_one">
               <h4>FILTERS</h4>
-              <P>10000+ Products</P><hr>
+              <P>10000+ Products</P>
+              <hr>
             </div>
 
 
             <!-- category -->
             <div class="category" id="categoryField">
-                    <h4 id="categoryText">Category</h4>
-                    <img id="C_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="categoryText">Category</h4>
+              <img id="C_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="C_list" class="C_hide">
               <li class="C_options" id="C_one" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 3px;">Accupressure Rollers</p>
+                <input type="checkbox">
+                <p style="margin-left: 3px;">Accupressure Rollers</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Accupressure Support</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Accupressure Support</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Analog Watches</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Analog Watches</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Anklets & Toe Rings</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Anklets & Toe Rings</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Appliance Covers</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Appliance Covers</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Ayurvedic</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Ayurvedic</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Ayurvedic Products</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Ayurvedic Products</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Bangles & Bracelets</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Bangles & Bracelets</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Battery</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Battery</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Bedsheets</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Bedsheets</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Blouses</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Blouses</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Bluetooth Headphones</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Bluetooth Headphones</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Accupressure Rollers</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Accupressure Rollers</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Accupressure Rollers</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Accupressure Rollers</p>
               </li>
               <li class="C_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Accupressure Rollers</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Accupressure Rollers</p>
               </li>
-            </ul><hr>
+            </ul>
+            <hr>
 
             <!-- gender -->
             <div class="gender" id="genderField">
-                <h4 id="genderText">Gender</h4>
-                <img id="G_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="genderText">Gender</h4>
+              <img id="G_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="G_list" class="G_hide">
               <li class="G_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Boys</p>
-              </li>
-              <li class="G_options"   style="display: flex;">
-                    <input type="checkbox">
-                    <p style="margin-left: 5px;">Girls</p>
-              </li>
-              <li class="G_options" id="men" style="display: flex;">
-                    <input type="checkbox">
-                    <p id="menp" style="margin-left: 5px;">Men</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Boys</p>
               </li>
               <li class="G_options" style="display: flex;">
-                    <input type="checkbox">
-                    <p id="womenp" style="margin-left: 5px;">women</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Girls</p>
               </li>
-            </ul><hr>
+              <li class="G_options" id="men" style="display: flex;">
+                <input type="checkbox">
+                <p id="menp" style="margin-left: 5px;">Men</p>
+              </li>
+              <li class="G_options" style="display: flex;">
+                <input type="checkbox">
+                <p id="womenp" style="margin-left: 5px;">women</p>
+              </li>
+            </ul>
+            <hr>
 
             <!-- fabric -->
             <div class="fabric" id="fabricField">
-                <h4 id="fabricText">Fabric</h4>
-                <img id="f_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="fabricText">Fabric</h4>
+              <img id="f_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="f_list" class="f_hide">
               <li class="f_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Banarassi Silk</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Banarassi Silk</p>
               </li>
               <li class="f_options" style="display: flex;">
                 <input type="checkbox">
@@ -433,229 +438,237 @@
               <li class="f_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Leather</p>
-              </li>   
-            </ul><hr> 
+              </li>
+            </ul>
+            <hr>
 
-           <!-- color -->
+            <!-- color -->
             <div class="color" id="colorField">
-                <h4 id="colorText">Color</h4>
-                <img id="c_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
-           <ul id="c_list" class="c_hide">
+              <h4 id="colorText">Color</h4>
+              <img id="c_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="c_list" class="c_hide">
               <li class="c_options" style="display: flex;">
-                  <input type="checkbox">
-                 <p style="margin-left: 5px;">Black</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Black</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">White</p>
+                <p style="margin-left: 5px;">White</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Red</p>
+                <p style="margin-left: 5px;">Red</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Pink</p>
+                <p style="margin-left: 5px;">Pink</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Gold</p>
+                <p style="margin-left: 5px;">Gold</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Blue</p>
+                <p style="margin-left: 5px;">Blue</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Brown</p>
+                <p style="margin-left: 5px;">Brown</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Gold</p>
+                <p style="margin-left: 5px;">Gold</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Grey</p>
+                <p style="margin-left: 5px;">Grey</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Maroon</p>
+                <p style="margin-left: 5px;">Maroon</p>
               </li>
               <li class="c_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Rose Gold</p>
+                <p style="margin-left: 5px;">Rose Gold</p>
               </li>
-            </ul><hr>
+            </ul>
+            <hr>
             <!-- price -->
             <div class="price" id="priceField">
-                <h4 id="priceText">Price</h4>
-                <img id="p_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="priceText">Price</h4>
+              <img id="p_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
-          <ul id="p_list" class="p_hide">
-            <li id="priceone" class="p_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Under 149</p>
-            </li>
-            <li id="pricetwo" class="p_options" style="display: flex;">
+            <ul id="p_list" class="p_hide">
+              <li id="priceone" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 149</p>
+              </li>
+              <li id="pricetwo" class="p_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Under 249</p>
-            </li>
-            <li id="pricethree" class="p_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Under 349</p>
-            </li>
-            <li id="pricefour" class="p_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Under 449</p>
-            </li>
-            <li id="pricefive" class="p_options" style="display: flex;">
-               <input type="checkbox">
-               <p style="margin-left: 5px;">Under 549</p>
-            </li>
-            <li id="pricesix" class="p_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Under 649</p>
-            </li>
-            <li id="priceseven" class="p_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Under 749</p>
-            </li>
-            <li id="priceeight" class="p_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Under 849</p>
-            </li>
-            <li id="pricenine" class="p_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Under 949</p>
-            </li>
-          </ul><hr> 
+              </li>
+              <li id="pricethree" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 349</p>
+              </li>
+              <li id="pricefour" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 449</p>
+              </li>
+              <li id="pricefive" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 549</p>
+              </li>
+              <li id="pricesix" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 649</p>
+              </li>
+              <li id="priceseven" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 749</p>
+              </li>
+              <li id="priceeight" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 849</p>
+              </li>
+              <li id="pricenine" class="p_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Under 949</p>
+              </li>
+            </ul>
+            <hr>
             <!-- Meesho Mall -->
-          <div class="meesho_mall" id="meesho_mallField">
-            <h4 id="meesho_mallText">Meesho Mall</h4>
-            <img id="mm_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-          </div>
-          <ul id="mm_list" class="mm_hide">
-            <li class="mm_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Accupressure Rollers</p>
-            </li>
-          </ul><hr> 
+            <div class="meesho_mall" id="meesho_mallField">
+              <h4 id="meesho_mallText">Meesho Mall</h4>
+              <img id="mm_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="mm_list" class="mm_hide">
+              <li class="mm_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Accupressure Rollers</p>
+              </li>
+            </ul>
+            <hr>
 
-          <!-- Occassion -->
-          <div class="Occassion" id="occassionField">
-            <h4 id="occassionText">Occassion</h4>
-            <img id="occ_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-          </div>
-          <ul id="occ_list" class="occ_hide">
-            <li class="occ_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Bridal</p>
-            </li>
-            <li class="occ_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Festive</p>
-            </li>
-          </ul><hr> 
+            <!-- Occassion -->
+            <div class="Occassion" id="occassionField">
+              <h4 id="occassionText">Occassion</h4>
+              <img id="occ_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="occ_list" class="occ_hide">
+              <li class="occ_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Bridal</p>
+              </li>
+              <li class="occ_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Festive</p>
+              </li>
+            </ul>
+            <hr>
 
-          <!-- Discount -->
-          <div class="discount" id="discountField">
-            <h4 id="discountText">Discount</h4>
-            <img id="D_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-          </div>
-          <ul id="D_list" class="D_hide">
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">10% and above</p>
-            </li>
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">20% ans above</p>
-            </li>
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">30% ans above</p>
-            </li>
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">40% ans above</p>
-            </li>
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">50% ans above</p>
-            </li>
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">60% ans above</p>
-            </li>
-            <li class="D_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">All discounts</p>
-            </li>
-          </ul><hr> 
-          <!-- Ratings -->
-          <div class="Rating" id="ratingField">
-            <h4 id="ratingText">Rating</h4>
-            <img id="R_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-          </div>
-          <ul id="R_list" class="R_hide">
-            <li id="rateone" class="R_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">2.0 and above</p>
-            </li>
-            <li id="ratetwo" class="R_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">3.0 and above</p>
-            </li>
-            <li id="ratethree" class="R_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">3.5 and above</p>
-            </li>
-            <li id="ratefour" class="R_options" style="display: flex;">
-              <input type="checkbox">
-              <p  style="margin-left: 5px;">4.0 and above</p>
-            </li>
-               <!-- <li id="M-T" class="R_options" style="display: flex;">
+            <!-- Discount -->
+            <div class="discount" id="discountField">
+              <h4 id="discountText">Discount</h4>
+              <img id="D_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="D_list" class="D_hide">
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">10% and above</p>
+              </li>
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">20% ans above</p>
+              </li>
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">30% ans above</p>
+              </li>
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">40% ans above</p>
+              </li>
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">50% ans above</p>
+              </li>
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">60% ans above</p>
+              </li>
+              <li class="D_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">All discounts</p>
+              </li>
+            </ul>
+            <hr>
+            <!-- Ratings -->
+            <div class="Rating" id="ratingField">
+              <h4 id="ratingText">Rating</h4>
+              <img id="R_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="R_list" class="R_hide">
+              <li id="rateone" class="R_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">2.0 and above</p>
+              </li>
+              <li id="ratetwo" class="R_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">3.0 and above</p>
+              </li>
+              <li id="ratethree" class="R_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">3.5 and above</p>
+              </li>
+              <li id="ratefour" class="R_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">4.0 and above</p>
+              </li>
+              <!-- <li id="M-T" class="R_options" style="display: flex;">
                 <input type="checkbox">
                 <p  style="margin-left: 5px;">M-Trusted</p>
                 </li> -->
-          </ul><hr> 
-          <!-- Size -->
-          <div class="size" id="sizeField">
-            <h4 id="sizeText">Size</h4>
-            <img id="S_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-          </div>
-          <ul id="S_list" class="S_hide">
-            <li class="S_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">XS</p>
-            </li>
-            <li class="S_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">S</p>
-            </li>
-            <li class="S_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">L</p>
-            </li>
-            <li class="S_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">XL</p>
-            </li>
-            <li class="S_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">XXL</p>
+            </ul>
+            <hr>
+            <!-- Size -->
+            <div class="size" id="sizeField">
+              <h4 id="sizeText">Size</h4>
+              <img id="S_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="S_list" class="S_hide">
+              <li class="S_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">XS</p>
               </li>
-            </ul><hr> 
+              <li class="S_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">S</p>
+              </li>
+              <li class="S_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">L</p>
+              </li>
+              <li class="S_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">XL</p>
+              </li>
+              <li class="S_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">XXL</p>
+              </li>
+            </ul>
+            <hr>
             <!-- Combo -->
             <div class="combo" id="comboField">
-                <h4 id="comboText">Combo</h4>
-                 <img id="combo_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="comboText">Combo</h4>
+              <img id="combo_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="combo_list" class="combo_hide">
               <li class="combo_options" style="display: flex;">
-                 <input type="checkbox">
-                 <p style="margin-left: 5px;">Combos</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Combos</p>
               </li>
               <li class="combo_options" style="display: flex;">
                 <input type="checkbox">
@@ -689,7 +702,8 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Single</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- Reversible
             <div class="Reversible" id="reversibleField">
                 <h4 id="reversibleText">Reversible</h4>
@@ -704,7 +718,7 @@
             <!-- Material -->
             <div class="material" id="materialField">
               <h4 id="materialText">Material</h4>
-              <img id="M_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="M_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="M_list" class="M_hide">
               <li class="M_options" style="display: flex;">
@@ -747,11 +761,12 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Steel</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- Bottom Length -->
             <div class="bottom_length" id="bottom_lengthField">
-                <h4 id="bottom_lengthText">Bottom Length</h4>
-                 <img id="BL_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="bottom_lengthText">Bottom Length</h4>
+              <img id="BL_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="BL_list" class="BL_hide">
               <li class="BL_options" style="display: flex;">
@@ -778,12 +793,13 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">4.5 Meters</p>
               </li>
-             </ul><hr> 
+            </ul>
+            <hr>
             <!-- Print Or Pattern type -->
             <!-- Bottom Style -->
             <div class="bottom_style" id="bottom_styleField">
               <h4 id="bottom_styleText">Bottom Style</h4>
-              <img id="BS_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="BS_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="BS_list" class="BL_hide">
               <li class="BS_options" style="display: flex;">
@@ -810,11 +826,12 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Layered</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- BottomWear Fabric -->
             <div class="bottom_fabric" id="bottom_fabricField">
               <h4 id="bottom_fabricText">Bottom Fabric</h4>
-              <img id="BF_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="BF_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="BF_list" class="BF_hide">
               <li class="BF_options" style="display: flex;">
@@ -841,12 +858,13 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Velvet</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- Ornamentation -->
             <!-- Bottom Pattern type -->
             <div class="bottom_type" id="bottom_typeField">
-                <h4 id="bottom_typeText">Bottom Type</h4>
-                <img id="BT_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="bottom_typeText">Bottom Type</h4>
+              <img id="BT_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="BT_list" class="BT_hide">
               <li class="BT_options" style="display: flex;">
@@ -873,7 +891,8 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Ruffle</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- Border
             surface styling
             Back type
@@ -883,7 +902,7 @@
             brand
              dial design
             compatible models-->
-             <!-- type
+            <!-- type
             wiring
             padding -->
             <!-- weight
@@ -893,25 +912,27 @@
             <!-- inner fabric -->
             <div class="inner" id="innerField">
               <h4 id="innerText">Inner Fabric</h4>
-               <img id="inner_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="inner_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="inner_list" class="inner_hide">
               <li class="inner_options" style="display: flex;">
-                 <input type="checkbox">
-                 <p style="margin-left: 5px;">Cotton</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Cotton</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- loom type -->
             <div class="loom" id="loomField">
               <h4 id="loomText">Loom Type</h4>
-              <img id="add_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="add_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="loom_list" class="loom_hide">
               <li class="loom_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Powerloom</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- warranty period -->
             <!-- waist rise -->
             <!-- bottom type -->
@@ -921,40 +942,43 @@
             <!-- shade -->
             <div class="shade" id="shadeField">
               <h4 id="shadeText">Shade</h4>
-              <img id="shade_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="shade_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="shade_list" class="shade_hide">
-            <li class="shade_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Natural Skin</p>
-            </li>
-            </ul><hr> 
+              <li class="shade_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Natural Skin</p>
+              </li>
+            </ul>
+            <hr>
             <!-- type of hair -->
             <!-- language -->
             <!-- book format -->
             <!-- board -->
             <div class="board" id="boardField">
               <h4 id="boardText">Board</h4>
-               <img id="board_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="board_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="board_list" class="board_hide">
               <li class="board_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">CBSE</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
 
             <!-- container type -->
             <div class="tain" id="tainField">
               <h4 id="tainText">Container Type</h4>
-              <img id="tain_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="tain_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="tain_list" class="tain_hide">
               <li class="tain_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Bottle</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- diary type -->
             <!-- brush head type -->
             <!-- feed type -->
@@ -963,16 +987,17 @@
             <!-- pet type -->
             <div class="pet" id="petField">
               <h4 id="petText">Pet Type</h4>
-              <img id="pet_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <img id="pet_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="pet_list" class="pet_hide">
               <li class="pet_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;"></p>Dogs
               </li>
-            </ul><hr> 
-           
-        
+            </ul>
+            <hr>
+
+
 
             <!-- speciality -->
             <!-- region -->
@@ -984,17 +1009,17 @@
             <!-- load capacity
             pages
             sheet Size
-            diameter--> 
+            diameter-->
 
             <!-- heat up time -->
             <div class="timeup" id="timeupField">
-                <h4 id="timeupText">Heat up Time</h4>
-                 <img id="timeup_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="timeupText">Heat up Time</h4>
+              <img id="timeup_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="timeup_list" class="timeup_hide">
               <li class="timeup_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">1-3 Minute</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">1-3 Minute</p>
               </li>
               <li class="timeup_options" style="display: flex;">
                 <input type="checkbox">
@@ -1003,22 +1028,23 @@
               <li class="timeup_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">5-7 Minute</p>
-             </li>
-              <li class="timeup_options" style="display: flex;">
-             <input type="checkbox">
-             <p style="margin-left: 5px;">7-10 Minute</p>
               </li>
-            </ul><hr> 
+              <li class="timeup_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">7-10 Minute</p>
+              </li>
+            </ul>
+            <hr>
 
             <!-- closure -->
             <div class="close" id="closeField">
-                <h4 id="closeText">Closure</h4>
-                 <img id="close_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="closeText">Closure</h4>
+              <img id="close_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="close_list" class="close_hide">
               <li class="close_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Lobster Closure</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Lobster Closure</p>
               </li>
               <li class="close_options" style="display: flex;">
                 <input type="checkbox">
@@ -1027,18 +1053,19 @@
               <li class="close_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Zipper</p>
-             </li>
-            </ul><hr> 
+              </li>
+            </ul>
+            <hr>
 
             <!-- display digit -->
             <div class="digit" id="digitField">
-                <h4 id="digitText">Display Digit</h4>
-                 <img id="digit_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="digitText">Display Digit</h4>
+              <img id="digit_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="digit_list" class="digit_hide">
               <li class="digit_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">10</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">10</p>
               </li>
               <li class="digit_options" style="display: flex;">
                 <input type="checkbox">
@@ -1047,151 +1074,161 @@
               <li class="digit_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">14</p>
-             </li>
-              <li class="digit_options" style="display: flex;">
-             <input type="checkbox">
-             <p style="margin-left: 5px;">16</p>
               </li>
-            </ul><hr> 
+              <li class="digit_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">16</p>
+              </li>
+            </ul>
+            <hr>
+            <!-- main-div -->
             <!-- no of paint shades -->
             <div class="noof" id="noofField">
               <h4 id="noofText">No Of Paint Shades</h4>
-               <img id="noof_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-         </div>
-          <ul id="noof_list" class="noof_hide">
-            <li class="noof_options" style="display: flex;">
-                 <input type="checkbox">
-                 <p style="margin-left: 5px;">12</p>
-            </li>
-            <li class="noof_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">14</p>
-            </li>
-            <li class="noof_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">18</p>
-           </li>
-            <li class="noof_options" style="display: flex;">
-           <input type="checkbox">
-           <p style="margin-left: 5px;">6</p>
-            </li>
-          </ul><hr> 
+              <img id="noof_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="noof_list" class="noof_hide">
+              <li class="noof_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">12</p>
+              </li>
+              <li class="noof_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">14</p>
+              </li>
+              <li class="noof_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">18</p>
+              </li>
+              <li class="noof_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">6</p>
+              </li>
+            </ul>
+            <hr>
             <!-- length -->
             <div class="length" id="lengthField">
               <h4 id="lengthText">Length</h4>
-               <img id="length_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-         </div>
-          <ul id="length_list" class="length_hide">
-            <li class="length_options" style="display: flex;">
-                 <input type="checkbox">
-                 <p style="margin-left: 5px;">Ankle Length</p>
-            </li>
-            <li class="length_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">Full Length</p>
-            </li>
-            <li class="length_options" style="display: flex;">
-              <input type="checkbox">
-              <p style="margin-left: 5px;">No Show</p>
-           </li>
-            <li class="length_options" style="display: flex;">
-           <input type="checkbox">
-           <p style="margin-left: 5px;">Shoe Liner</p>
-            </li>
-          </ul><hr> 
+              <img id="length_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
+            <ul id="length_list" class="length_hide">
+              <li class="length_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Ankle Length</p>
+              </li>
+              <li class="length_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Full Length</p>
+              </li>
+              <li class="length_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">No Show</p>
+              </li>
+              <li class="length_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Shoe Liner</p>
+              </li>
+            </ul>
+            <hr>
 
 
             <!-- suitable for -->
             <div class="for" id="forField">
               <h4 id="forText">Suitable For</h4>
-               <img id="for_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-             </div>
+              <img id="for_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="for_list" class="for_hide">
               <li class="for_options" style="display: flex;">
-                 <input type="checkbox">
-                 <p style="margin-left: 5px;">Jack</p>
-               </li>
-               <li class="for_options"   style="display: flex;">
-               <input type="checkbox">
-               <p style="margin-left: 5px;">USB</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Jack</p>
               </li>
-            </ul><hr> 
+              <li class="for_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">USB</p>
+              </li>
+            </ul>
+            <hr>
             <!-- sticking arear -->
             <div class="area" id="areaField">
-                <h4 id="areaText">Sticking Area</h4>
-                 <img id="area_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="areaText">Sticking Area</h4>
+              <img id="area_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="area_list" class="area_hide">
               <li class="area_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Bumper</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Bumper</p>
               </li>
               <li class="area_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Sides</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- range -->
             <div class="range" id="rangeField">
-                <h4 id="rangeText">Range</h4>
-                 <img id="range_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="rangeText">Range</h4>
+              <img id="range_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="range_list" class="range_hide">
               <li class="range_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">2 mts</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">2 mts</p>
               </li>
-            </ul><hr> 
-            <!-- bluetooth--> 
+            </ul>
+            <hr>
+            <!-- bluetooth-->
             <div class="blue" id="blueField">
-                <h4 id="blueText">Bluetooth</h4>
-                 <img id="blue_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="blueText">Bluetooth</h4>
+              <img id="blue_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="blue_list" class="blue_hide">
               <li class="blue_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">No</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">No</p>
               </li>
               <li class="blue_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Yes</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- blade material -->
             <div class="blade" id="bladeField">
-                <h4 id="bladeText">Blade  Material</h4>
-                 <img id="blade_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="bladeText">Blade Material</h4>
+              <img id="blade_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="blade_list" class="blade_hide">
               <li class="blade_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Stainless Steel</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Stainless Steel</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- finish material  -->
             <div class="finish" id="finishField">
-                <h4 id="finishText">Finish Material</h4>
-                 <img id="finish_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="finishText">Finish Material</h4>
+              <img id="finish_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="finish_list" class="finish_hide">
               <li class="finish_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Polished</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Polished</p>
               </li>
               <li class="finish_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Unpolished</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- material -->
             <div class="mat" id="matField">
-                <h4 id="matText">Material</h4>
-                 <img id="page_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="matText">Material</h4>
+              <img id="page_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="mat_list" class="mat_hide">
               <li class="mat_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Paper</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Paper</p>
               </li>
               <li class="mat_options" style="display: flex;">
                 <input type="checkbox">
@@ -1201,16 +1238,17 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Resin</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- interface -->
             <div class="inter" id="interField">
-                <h4 id="interText">interface</h4>
-                 <img id="inter_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="interText">interface</h4>
+              <img id="inter_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="inter_list" class="inter_hide">
               <li class="inter_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Usb</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Usb</p>
               </li>
               <li class="inter_options" style="display: flex;">
                 <input type="checkbox">
@@ -1220,18 +1258,19 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">WiFi Direct</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- ruled
-            book Age--> 
-            <!-- no of pages--> 
+            book Age-->
+            <!-- no of pages-->
             <div class="page" id="pageField">
-                <h4 id="pageText">No Of Pages</h4>
-                 <img id="page_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="pageText">No Of Pages</h4>
+              <img id="page_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="page_list" class="page_hide">
               <li class="page_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">151 to 350</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">151 to 350</p>
               </li>
               <li class="page_options" style="display: flex;">
                 <input type="checkbox">
@@ -1241,66 +1280,70 @@
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Above 500</p>
               </li>
-               <li class="page_options" style="display: flex;">
-             <input type="checkbox">
-             <p style="margin-left: 5px;">upto 150</p>
+              <li class="page_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">upto 150</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- ruled  -->
             <div class="ruled" id="ruledField">
-                <h4 id="ruledText">Ruled</h4>
-                 <img id="ruled_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="ruledText">Ruled</h4>
+              <img id="ruled_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="ruled_list" class="ruled_hide">
               <li class="ruled_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">NO</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">NO</p>
               </li>
               <li class="SC_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Yes</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
 
             <!-- strap Color  -->
             <div class="strap" id="strapField">
-                <h4 id="strapText">Strap Color</h4>
-                 <img id="SC_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="strapText">Strap Color</h4>
+              <img id="SC_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="SC_list" class="SC_hide">
               <li class="SC_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Blue</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Blue</p>
               </li>
               <li class="SC_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Navy Blue</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- display type -->
             <div class="display" id="displayField">
-                <h4 id="displayText">Display Type</h4>
-                 <img id="dis_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="displayText">Display Type</h4>
+              <img id="dis_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="dis_list" class="dis_hide">
               <li class="dis_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Analog</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Analog</p>
               </li>
               <li class="dis_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Digital</p>
               </li>
-            </ul><hr> 
+            </ul>
+            <hr>
             <!-- dial colour -->
             <div class="dial" id="dialField">
-                <h4 id="dialText">Dial Colour</h4>
-                 <img id="dial_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="dialText">Dial Colour</h4>
+              <img id="dial_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="dial_list" class="dial_hide">
               <li class="dial_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Beige</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Beige</p>
               </li>
               <li class="dial_options" style="display: flex;">
                 <input type="checkbox">
@@ -1308,441 +1351,560 @@
               </li>
               <li class="dial_options" style="display: flex;">
                 <input type="checkbox">
-               <p style="margin-left: 5px;">Cream</p>
+                <p style="margin-left: 5px;">Cream</p>
               </li>
               <li class="dial_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Gold</p>
-               </li>
-               <li class="dial_options" style="display: flex;">
+              </li>
+              <li class="dial_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Green</p>
-               </li>
-               <li class="dial_options" style="display: flex;">
+              </li>
+              <li class="dial_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Grey</p>
-               </li>
-               <li class="dial_options" style="display: flex;">
+              </li>
+              <li class="dial_options" style="display: flex;">
                 <input type="checkbox">
                 <p style="margin-left: 5px;">Pink</p>
-                </li>
-            </ul><hr> 
+              </li>
+            </ul>
+            <hr>
             <!-- base metal -->
             <div class="base" id="baseField">
-                <h4 id="baseText">Base Metal</h4>
-                 <img id="base_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
-           </div>
+              <h4 id="baseText">Base Metal</h4>
+              <img id="base_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
+            </div>
             <ul id="base_list" class="base_hide">
               <li class="base_options" style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">Alloy</p>
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Alloy</p>
               </li>
-                <li class="base_options" style="display: flex;">
-                  <input type="checkbox">
-                 <p style="margin-left: 5px;">Brass</p>
-                </li>
-              </ul><hr> 
+              <li class="base_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">Brass</p>
+              </li>
+            </ul>
+            <hr>
             <!-- add on  -->
             <div class="add" id="addField">
-                <h4 id="addText">Add On</h4>
-                 <img id="add_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">   
+              <h4 id="addText">Add On</h4>
+              <img id="add_arrow" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt="">
             </div>
             <ul id="add_list" class="add_hide">
-                <li class="add_options"      style="display: flex;">
-                   <input type="checkbox">
-                   <p style="margin-left: 5px;">No Add On</p>
-                </li>
+              <li class="add_options" style="display: flex;">
+                <input type="checkbox">
+                <p style="margin-left: 5px;">No Add On</p>
+              </li>
             </ul>
 
           </div>
         </div>
-       <div class="right-div"></div>
+        <div class="right-div"></div>
       </div>
-    </main>
-    <!-- ********************************************************************************************************** -->
-    <footer>
-      <div class="footer_main">
-        <div id="downloads">
-          <h1>Shop Non-Stop on Meesho</h1>
-          <p>Trusted by more than 1 Crore Indians </p>
-          <p>Cash on Delivery | Free Delivery </p>
-          <div id="footer_imgs">
-            <div>
-             <img src="https://images.meesho.com/images/pow/playstore-icon-big.png" alt="">
-            </div>
-            <div>
-             <img src="https://images.meesho.com/images/pow/appstore-icon-big.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div id="carees">
+  </main>
+  <!-- ********************************************************************************************************** -->
+  <footer>
+    <div class="footer_main">
+      <div id="downloads">
+        <h1>Shop Non-Stop on Meesho</h1>
+        <p>Trusted by more than 1 Crore Indians </p>
+        <p>Cash on Delivery | Free Delivery </p>
+        <div id="footer_imgs">
           <div>
-            <p>Careers</p>
-            <p>Become a supplier</p>
-            <p>Hall of Fame</p>
+            <img src="https://images.meesho.com/images/pow/playstore-icon-big.png" alt="">
           </div>
           <div>
-            <p>Legal and Policies</p>
-            <p>Meesho Tech Blog</p>
-            <p>Notices and Returns</p>
-          </div>
-        </div>
-        <div id="contact">
-          <div>
-            <h3>Reach out to us</h3>
-            <div id="logos_imgs">
-              <div><img width="100%" src="https://images.meesho.com/images/pow/facebook.png" alt=""></div>
-              <div><img width="100%" src="https://images.meesho.com/images/pow/instagram.png" alt=""></div>
-              <div><img width="100%" src="https://images.meesho.com/images/pow/youtube.png" alt=""></div>
-              <div><img width="100%" src="https://images.meesho.com/images/pow/linkedin.png" alt=""></div>
-              <div><img width="100%" src="https://images.meesho.com/images/pow/twitter.png" alt=""></div>
-            </div>
-          </div>
-          <div id="font_text">
-            <h3>Contact Us</h3>
-            <p>Fashnear Technologies Private Limited,CIN:U74900KA2015PTC082263
-              06-105-B, 06-102, (138 Wu) Vaishnavi Signature, No. 78/9, Outer Ring Road, Bellandur, Varthur Hobli, Bengaluru-560103,Karnataka, India
-              E-mail address: query@meesho.com
-              © 2015-2022 Meesho.com</p>
+            <img src="https://images.meesho.com/images/pow/appstore-icon-big.png" alt="">
           </div>
         </div>
       </div>
-      <div id="shadow">
+      <div id="carees">
         <div>
-           <h3>More About Meesho</h3><hr>
-           <h3><b>Meesho: Affordable Online Shopping at Your Fingertips</b></h3>
-          <p>There are many benefits of shopping online. You can take your time and look at different options to find exactly what you want. It's easy to compare prices online and find exactly what you are looking for. And now with Meesho, you can shop for anything you want at the lowest prices in the market.  Even if you want to shop for cool gifts for your friends and family, there are many options that you can find on the Internet. </p>
-          <h3>A Huge Selection of Products Across All Categories</h3>
-          <p>We have a vast inventory of products ranging from apparel to cosmetics to home utility and kitchen products and more. With over 50 lakh products and 650+ product categories, Meesho is sure to have everything you need. In our latest collections, you will find all the popular items at an affordable price, so you can be confident you're getting the best deal. Whether you're in the market for new clothes, accessories, or just some daily-use items for home, Meesho has what you need.</p>
-          <h3>Latest Women's Fashion Is Right Here</h3>
-          <h3>Women’s Ethnic Wear Collection</h3>
-          <p>When it comes to <span style="color: #f980ab;">women's ethnic wear</span>, we have everything you need to find the perfect outfit for any occasion. Whether you're looking for traditional sarees and blouses, or something more modern like suits or casual <span style="color: #f980ab;">Kurtis</span>, we have it all. And with our stunning collection of accessories, footwear, and <span style="color: #f980ab;">jewellery sets</span>, it's easy to put together a complete look that will turn heads at your next wedding or festive celebration. So come and shop with us today!</p>
-
-          <h3>Western Wear for Women</h3>
-          <p>Meesho is the best place to find fashionable and affordable western wear for women. With a constantly updating inventory of casual, formal, and partywear dresses, jeans, tops, <span style="color: #f980ab;">T-shirts</span>, skirts, and more, Meesho has all the latest trending outfits you're looking for--plus funky jewelry and accessories. You'll never have to worry about overspending or not being able to find something you love!</p>
-          <h3>Accessories, Jewellery, and Footwear</h3>
-          <p>You may have your favorite outfit picked out but accessories can really add a sense of style and individuality that make you stand out! With so many types of accessories available, it can be difficult to find the perfect piece for yourself. Fortunately, Meesho has a wide variety of jewellery sets, <span style="color: #f980ab;">handbags</span>, belts, heels, casual footwear, <span style="color: #f980ab;">watches</span>, etc. With so many options, you'll be sure to find the perfect accessories for any outfit!</p>
-          <h3>Men's Ethnic Wear</h3>
-          <p>Do you need a new Sherwani? Are you heading to a wedding and want to look your best? If you answered yes, look no further than our latest men’s ethnic wear collection! Whether you want a Kurta set, Pajamas, Sherwani set, or any other Indian attire, we have an array of budget-friendly styles that are sure to fit your needs.</p>
-          <h3>Largest Collection of Menswear and Accessories </h3>
-          <h3>Men’s Western Wear</h3>
-          <p>Through our large selection of menswear products we offer, you’re sure to find something you love. We have a vast collection of t-shirts, jeans, polos, coats, and shirts. We have sizes in stock that fit any man’s body type, and the best news of all is that they’re all affordable. We make it easy to find exactly what you’re looking for, too. Our search tool lets you filter our selection down by size, color, material, and more. </p>
-          <h3>Ethnic Wear for Men</h3>
-          <p>If you're on the hunt for a new sherwani or any other type of Indian attire for an upcoming wedding, our latest men's ethnic wear collection has got you covered. We have a range of budget-friendly styles to choose from, so you're sure to find something that fits your needs. Whether you're looking for a Sherwani set, Kurta pajamas, or an ethnic jacket, we've got it all!</p>
-          <h3>Men’s Accessories and Footwear</h3>
-          <p>When it comes to fashion, no one knows how to help you gain the upper hand in style better than us. Shop our online collection of accessories for men and pick out something for yourself or for your other half! Our accessories collection includes items like men's wallets, cufflinks, bags for men, and more. So don't waste another minute and get yourself some accessories today! Do not forget to check out our latest footwear for men. We have everything from colorful sneakers to formal footwear to flip-flops for men.</p>
-          <h3>Affordable and Top Quality Beauty Products</h3>
-          <p>With so many different cosmetics brands, products, and items to choose from, it can be overwhelming when trying to find the right makeup for you. Sometimes it's nice to try out new products, but if you buy bad quality makeup that breaks you out, it's not very cost-effective. We are only concerned with the best products. We only stock up on the best <span style="color: #f980ab;">makeup </span>and skincare that won't damage your skin or make you break out. We have everything from foundations, makeup removers, concealers to primer, mascara, eye shadow, and lipsticks.</p>
-
-          <h3>Cute and Trendy Kidswear Collection</h3>
-          <p>Kids grow so fast, it feels like you're constantly buying new clothes for them! Whether you're looking for the latest trends or just want something practical and affordable, our kidswear collection has got you covered. You'll find everything from rompers and dresses for girls to sets and jeans for boys. Plus, we have ethnic wear and accessories for kids of all ages. And don't forget to check out our baby care collection for all the basic products for <span style="color: #f980ab;">baby care</span>.</p>
-
-          <h3>Shop Home & Kitchen Products, Electronics, and More</h3>
-
-          <h3>Kitchen Products</h3>
-          <p>If you're looking to spice up your kitchen, then you've come to the right place! We carry a wide variety of home and kitchen essentials like cooking utensils and serveware,<span style="color: #f980ab;"> kitchen storag</span>e, appliances like blenders, choppers, cooktops, and more! We are dedicated to providing the highest quality products for a reasonable price. We're confident that we have everything you're looking for in your kitchen or home!</p>
-
-          <h3>Home Utility and Essentials</h3>
-          <p>It's always a good idea to switch up your home's style every now and then - it keeps things fresh and also allows you to try out new trends. But of course, you never want to spend more money than you have to. That's where Meesho comes in! We've got amazing prices on all kinds of home furnishing items like <span style="color: #f980ab;">bedsheets, curtains, cushions</span>, and more. Plus, we have a constantly rotating selection of the best home decor items so you can always stay on top of the latest trends. So be sure to check out our home decor section today! </p>
-          <h3>Electronics and Accessories</h3>
-          <p>At Meesho, we give you access to a huge selection of gadgets and essentials for your <span style="color: #f980ab;">electronic </span>devices. Here you'll find everything from chargers and headphones to data cables and even external battery packs. Every month, we offer different sales and discounts on products, allowing you to save on your favorite essentials. Here you can find the perfect gift for everyone on your list without breaking your budget!</p>
-          <h3>Health, Fitness & Sports</h3>
-          <p>We know how important it is to take care of your health and keep yourself fit. We have everything you need to start your journey towards fitness. At our store, you will find a wide variety of fitness equipment at very affordable prices. We have everything you need to get started with your home workouts, including dumbbell sets, exercise bands, exercise mats, skipping ropes, sports kits and more!</p>
-          <h3>Office Supplies and Stationery </h3>
-          <p>We have a wide range of stationery items which will help you stay tidy and organised. You can buy notebooks, diaries and notepads and craft supplies which are great for school and college, or you can buy office supplies which are great for adults. We have a variety of pens, pencils, and other stationery supplies to ensure that you have what you need to write down your thoughts, make lists and so much more.</p>
-          <h3>Get the Meesho App for Hassle Free Online Shopping </h3>
-          <p>If you want a seamless shopping experience, you should also consider downloading Meesho’s App. While you may think that it's unnecessary to have an app for shopping, there are plenty of features that will make your life easier. If you find yourself preferring to shop from home, this is the app for you. It makes shopping online easier than ever. You can browse through a plethora of products and even get great deals with more discounts than you can count. You can even share products you like with your friends on social media in just seconds. </p>
-          <h3 style="color: #f980ab;">Download Meesho App Now</h3>
-          <h3>Become a Reseller: Start Making Money In Three Simple Steps</h3>
-          <p>Now you know all about different categories and products Meesho has to offer. It's time to explore and understand Meesho’s reselling option. Apart from using Meesho as an online shopping platform, you also have the option to start your online business with us. Here’s how you can begin your entrepreneurial journey.
-
-          Browse: You can register for a new account or log in to an existing one on the Meesho app or website. Once you're logged in, you can browse through our catalog and select products that you want to purchase at wholesale rates!
-            
-          Share: With a single click, you can share catalogs and product images over Whatsapp, Facebook, or Instagram to your contacts using the share option.
-            
-          Earn: After sharing the products and catalogs with your customers, you will start getting orders from them. You can add a profit margin to Meesho’s prices and quote that to your customers.This will be your profit. You can quote product prices with an added margin, which will include a profit for you. Once you place the orders on your customer’s behalf, Meesho will take care of the delivery process for you. </p>
-          <h3>Don't Miss Out! Start Shopping Online on Meesho Now</h3>
-          <p>Meesho offers multiple payment options including debit and credit cards, UPI, and COD to help you with a smooth checkout process. If you are unhappy with any of the products you order you can immediately return them and get a full refund with no questions asked. In case you have any queries or concerns, simply send us an email at query@meesho.com. Or you can contact us on social media through Facebook, Instagram, or Twitter. We're here to help you!</p>
-
-
-          <h3 style="color: #f980ab;">Online Shopping</h3>
-          <h4>Home & Living</h4>
-          <p><span > Curtains & Sheers </span>| <span>Round Cushions </span>| <span>Sofa Covers </span>| <span>Cotton Bedsheets</span> |<span> Bedding Sets</span> | <span>Pillow Covers</span> | <span>Decorative Items</span> | <span>Duvet Covers</span> | <span>Blankets</span> | <span>Home Temple </span>| <span>Yoga mats </span>| <span>Bean Bags </span>|<span> Single Bed Sheet </span>| <span>Cushions</span> | <span>Face Towels </span>| <span>Cotton Towel </span>|...</p>
-
-          <h4>Men Ethnicwear</h4>
-          <p><span>Men Dhoti Kurtas </span>|<span> Men Indo Western Dresses</span> | <span>Men Velvet Sherwanis </span>| <span>Men Dhotis</span></p>
-
-          <h4>Women Western Wear</h4>
-          <p><span>Women Frocks </span>| <span>Long Tops Women </span>| <span>Tshirt Dresses</span> | <span>Designer Gown</span> | <span>Pencil Skirts </span>| <span>Women Trousers </span>| <span>Flared Jeans </span>|<span> Women Sweatshirts </span>| <span>Shrugs</span> | <span>Capris</span> | <span>Jacket Dresses</span>| <span>Fancy Ladies Sweater </span>| <span>Chikankari Palazzos </span>|<span> Ankle Length Leggings </span>| <span>Tights </span>|...</p>
-
-          <h4>Women Ethnicwear</h4>
-          <p><span>Silk Saree</span> |<span> Puff Sleeve Blouses </span>| <span>Chikankari Kurtis </span>| <span>Designer Lehenga</span> | <span>Sharara </span>| <span>Phulkari Dupatta</span> | <span>Petticoats </span>|<span> Abaya </span>| <span>Black Kurta</span> |<span> Velvet Shawls </span>| <span>Blouse Piece</span> |<span> Kurti Fabric </span>| <span>Designer Suits</span></p>
-
-          <h4>Women Footwear</h4>
-          <p><span> Women Slippers </span>| <span>Bellies </span>| <span>Juttis & Mojaris</span></p>
-
-          <h4>Women Accessories</h4>
-          <p><span>Hoop Earrings </span>| <span>Stud Earrings Women </span>| <span>Oxidised Ring </span>| <span>Handbags </span>|<span> Umbrellas </span>| <span>Cateye Sunglasses </span>| <span>Jewellery Set</span> | <span>Slingbags</span> | <span>Trolley Bags</span> |<span> Hijabs</span> | <span>Ankle Socks Women </span>| <span>Clutches</span> | <span>Hair Accessories</span> |<span> Maangtika</span> | <span>Pouches </span>| <span>Duffle Bags</span>...</p>
-
-          <h4>Electronics & Accessories</h4>
-          <p><span>Android Smart Watches </span>|<span> On Ear Headphones </span>| <span>Bluetooth Speakers</span> | <span>Bluetooth Earphones </span>| <span>Sport Headphones </span>| <span>CCTV Cameras </span>| <span>Spy Cameras </span>| <span>Keyboard </span>| <span>Laptop Bags </span>| <span>Mouse </span>| <span>Laptop Accessories </span>| <span>Pen Drives </span>| <span>Earphones </span>| <span>Fast Charging</span>...</p>
-
-          <h4>Men Western Wear</h4>
-          <p><span>Cotton Shorts Men </span>|<span> Denim Jeans Men</span> | <span>Formal Trousers Men</span> | <span>Men Active Shorts</span> | <span>Sport Jackets Men </span>| <span>Printed Tshirts </span>| <span>Formal Shirts Men </span>| <span>Sleeveless Sweatshirts Men </span>| <span>Leather Jackets Men</span> | <span>Grey Blazers </span>| <span>Men Sweaters</span> | <span>Sport Tracksuits Men </span>| <span>Vests </span>|...</p>
-
-          <h4>Men Footwear</h4>
-          <p><span>Reebok Sports Shoes Men</span> |<span> Men Sandals </span>|<span> Leather Loafers Men</span></p>
-
-          <h4>Men Accessories</h4>
-          <p><span>Leather Watches Men</span> | <span>Gold Jewellery Men </span>| <span>Hair Spray For Men</span> | <span>Men Keychains </span>| <span>Men Socks</span> |<span> Men Scarves</span> | <span>Men Wrist Bands </span>| <span>Men Crossbody Bags</span> |<span> Men Shirt Studs</span></p>
-
-          <h4>Kids</h4>
-          <p><span>Kids Lunch Boxes</span> |<span> Kids Ethnic Jackets</span> |<span> Kids Blazers </span>| <span>Rompers </span>| <span>Kids Kurtis & Kurtas </span> | <span>Kids Salwar Suit Sets </span>| <span>Kids Ethnic Gowns</span> | <span>Tshirts Boys </span>| <span>Girls Stylish Tops</span></p>
-
-          <h4>Baby</h4>
-          <p><span>Baby Pillows</span> |<span> Baby Towels</span> | <span>Baby Hanging Cradle</span> | <span>Baby Sleeping Bag </span>| <span>Baby Blanket</span></p>
-
-          <h4>Home & Kitchen</h4>
-          <p><span>Toaster</span> |<span> Mixer Grinder</span> | <span>Cookers </span>| <span>Juicer </span>| <span>Food Processors</span> | <span>Roti Maker</span> | <span>Sandwich Maker </span>| <span>Kettles</span> | <span>Hand Blender </span>| <span>Table Cover </span>| <span>Napkins Holder</span> | <span>Kitchen Mat </span>| <span>Kitchen Towel </span>| <span>Aprons </span>| <span>Kitchen Gloves </span>| <span>Racks & Holders</span> |<span> Spice Racks</span> | <span>Jars &</span>...</p>
-
-          <h4>Personal Care & Wellness</h4>
-          <p> <span>Tummy trimmer </span>| <span>Makeup Kits </span>| <span>Hair Color </span>| <span>Hair Steamers </span>| <span>Hair Care</span> | <span>Oral Care </span>| <span>Beard Oil</span> | <span>Deodorants </span>| <span>Eye Lenses</span> | <span>Soap </span>| <span>Oximeter </span>|<span> Bb Cream </span>|<span> Body Scrub</span> | <span>Olive Oils</span> | <span>Talcum Powder</span> |<span> Face Steamers </span>| <span>Compact</span> | <span>Nail Cutter</span> | <span>Lip Balm</span><p>
+          <p>Careers</p>
+          <p>Become a supplier</p>
+          <p>Hall of Fame</p>
+        </div>
+        <div>
+          <p>Legal and Policies</p>
+          <p>Meesho Tech Blog</p>
+          <p>Notices and Returns</p>
         </div>
       </div>
+      <div id="contact">
+        <div>
+          <h3>Reach out to us</h3>
+          <div id="logos_imgs">
+            <div><img width="100%" src="https://images.meesho.com/images/pow/facebook.png" alt=""></div>
+            <div><img width="100%" src="https://images.meesho.com/images/pow/instagram.png" alt=""></div>
+            <div><img width="100%" src="https://images.meesho.com/images/pow/youtube.png" alt=""></div>
+            <div><img width="100%" src="https://images.meesho.com/images/pow/linkedin.png" alt=""></div>
+            <div><img width="100%" src="https://images.meesho.com/images/pow/twitter.png" alt=""></div>
+          </div>
+        </div>
+        <div id="font_text">
+          <h3>Contact Us</h3>
+          <p>Fashnear Technologies Private Limited,CIN:U74900KA2015PTC082263
+            06-105-B, 06-102, (138 Wu) Vaishnavi Signature, No. 78/9, Outer Ring Road, Bellandur, Varthur Hobli,
+            Bengaluru-560103,Karnataka, India
+            E-mail address: query@meesho.com
+            © 2015-2022 Meesho.com</p>
+        </div>
+      </div>
+    </div>
+    <div id="shadow">
+      <div>
+        <h3>More About Meesho</h3>
+        <hr>
+        <h3><b>Meesho: Affordable Online Shopping at Your Fingertips</b></h3>
+        <p>There are many benefits of shopping online. You can take your time and look at different options to find
+          exactly what you want. It's easy to compare prices online and find exactly what you are looking for. And now
+          with Meesho, you can shop for anything you want at the lowest prices in the market. Even if you want to shop
+          for cool gifts for your friends and family, there are many options that you can find on the Internet. </p>
+        <h3>A Huge Selection of Products Across All Categories</h3>
+        <p>We have a vast inventory of products ranging from apparel to cosmetics to home utility and kitchen products
+          and more. With over 50 lakh products and 650+ product categories, Meesho is sure to have everything you need.
+          In our latest collections, you will find all the popular items at an affordable price, so you can be confident
+          you're getting the best deal. Whether you're in the market for new clothes, accessories, or just some
+          daily-use items for home, Meesho has what you need.</p>
+        <h3>Latest Women's Fashion Is Right Here</h3>
+        <h3>Women’s Ethnic Wear Collection</h3>
+        <p>When it comes to <span style="color: #f980ab;">women's ethnic wear</span>, we have everything you need to
+          find the perfect outfit for any occasion. Whether you're looking for traditional sarees and blouses, or
+          something more modern like suits or casual <span style="color: #f980ab;">Kurtis</span>, we have it all. And
+          with our stunning collection of accessories, footwear, and <span style="color: #f980ab;">jewellery
+            sets</span>, it's easy to put together a complete look that will turn heads at your next wedding or festive
+          celebration. So come and shop with us today!</p>
 
-    </footer>
+        <h3>Western Wear for Women</h3>
+        <p>Meesho is the best place to find fashionable and affordable western wear for women. With a constantly
+          updating inventory of casual, formal, and partywear dresses, jeans, tops, <span
+            style="color: #f980ab;">T-shirts</span>, skirts, and more, Meesho has all the latest trending outfits you're
+          looking for--plus funky jewelry and accessories. You'll never have to worry about overspending or not being
+          able to find something you love!</p>
+        <h3>Accessories, Jewellery, and Footwear</h3>
+        <p>You may have your favorite outfit picked out but accessories can really add a sense of style and
+          individuality that make you stand out! With so many types of accessories available, it can be difficult to
+          find the perfect piece for yourself. Fortunately, Meesho has a wide variety of jewellery sets, <span
+            style="color: #f980ab;">handbags</span>, belts, heels, casual footwear, <span
+            style="color: #f980ab;">watches</span>, etc. With so many options, you'll be sure to find the perfect
+          accessories for any outfit!</p>
+        <h3>Men's Ethnic Wear</h3>
+        <p>Do you need a new Sherwani? Are you heading to a wedding and want to look your best? If you answered yes,
+          look no further than our latest men’s ethnic wear collection! Whether you want a Kurta set, Pajamas, Sherwani
+          set, or any other Indian attire, we have an array of budget-friendly styles that are sure to fit your needs.
+        </p>
+        <h3>Largest Collection of Menswear and Accessories </h3>
+        <h3>Men’s Western Wear</h3>
+        <p>Through our large selection of menswear products we offer, you’re sure to find something you love. We have a
+          vast collection of t-shirts, jeans, polos, coats, and shirts. We have sizes in stock that fit any man’s body
+          type, and the best news of all is that they’re all affordable. We make it easy to find exactly what you’re
+          looking for, too. Our search tool lets you filter our selection down by size, color, material, and more. </p>
+        <h3>Ethnic Wear for Men</h3>
+        <p>If you're on the hunt for a new sherwani or any other type of Indian attire for an upcoming wedding, our
+          latest men's ethnic wear collection has got you covered. We have a range of budget-friendly styles to choose
+          from, so you're sure to find something that fits your needs. Whether you're looking for a Sherwani set, Kurta
+          pajamas, or an ethnic jacket, we've got it all!</p>
+        <h3>Men’s Accessories and Footwear</h3>
+        <p>When it comes to fashion, no one knows how to help you gain the upper hand in style better than us. Shop our
+          online collection of accessories for men and pick out something for yourself or for your other half! Our
+          accessories collection includes items like men's wallets, cufflinks, bags for men, and more. So don't waste
+          another minute and get yourself some accessories today! Do not forget to check out our latest footwear for
+          men. We have everything from colorful sneakers to formal footwear to flip-flops for men.</p>
+        <h3>Affordable and Top Quality Beauty Products</h3>
+        <p>With so many different cosmetics brands, products, and items to choose from, it can be overwhelming when
+          trying to find the right makeup for you. Sometimes it's nice to try out new products, but if you buy bad
+          quality makeup that breaks you out, it's not very cost-effective. We are only concerned with the best
+          products. We only stock up on the best <span style="color: #f980ab;">makeup </span>and skincare that won't
+          damage your skin or make you break out. We have everything from foundations, makeup removers, concealers to
+          primer, mascara, eye shadow, and lipsticks.</p>
+
+        <h3>Cute and Trendy Kidswear Collection</h3>
+        <p>Kids grow so fast, it feels like you're constantly buying new clothes for them! Whether you're looking for
+          the latest trends or just want something practical and affordable, our kidswear collection has got you
+          covered. You'll find everything from rompers and dresses for girls to sets and jeans for boys. Plus, we have
+          ethnic wear and accessories for kids of all ages. And don't forget to check out our baby care collection for
+          all the basic products for <span style="color: #f980ab;">baby care</span>.</p>
+
+        <h3>Shop Home & Kitchen Products, Electronics, and More</h3>
+
+        <h3>Kitchen Products</h3>
+        <p>If you're looking to spice up your kitchen, then you've come to the right place! We carry a wide variety of
+          home and kitchen essentials like cooking utensils and serveware,<span style="color: #f980ab;"> kitchen
+            storag</span>e, appliances like blenders, choppers, cooktops, and more! We are dedicated to providing the
+          highest quality products for a reasonable price. We're confident that we have everything you're looking for in
+          your kitchen or home!</p>
+
+        <h3>Home Utility and Essentials</h3>
+        <p>It's always a good idea to switch up your home's style every now and then - it keeps things fresh and also
+          allows you to try out new trends. But of course, you never want to spend more money than you have to. That's
+          where Meesho comes in! We've got amazing prices on all kinds of home furnishing items like <span
+            style="color: #f980ab;">bedsheets, curtains, cushions</span>, and more. Plus, we have a constantly rotating
+          selection of the best home decor items so you can always stay on top of the latest trends. So be sure to check
+          out our home decor section today! </p>
+        <h3>Electronics and Accessories</h3>
+        <p>At Meesho, we give you access to a huge selection of gadgets and essentials for your <span
+            style="color: #f980ab;">electronic </span>devices. Here you'll find everything from chargers and headphones
+          to data cables and even external battery packs. Every month, we offer different sales and discounts on
+          products, allowing you to save on your favorite essentials. Here you can find the perfect gift for everyone on
+          your list without breaking your budget!</p>
+        <h3>Health, Fitness & Sports</h3>
+        <p>We know how important it is to take care of your health and keep yourself fit. We have everything you need to
+          start your journey towards fitness. At our store, you will find a wide variety of fitness equipment at very
+          affordable prices. We have everything you need to get started with your home workouts, including dumbbell
+          sets, exercise bands, exercise mats, skipping ropes, sports kits and more!</p>
+        <h3>Office Supplies and Stationery </h3>
+        <p>We have a wide range of stationery items which will help you stay tidy and organised. You can buy notebooks,
+          diaries and notepads and craft supplies which are great for school and college, or you can buy office supplies
+          which are great for adults. We have a variety of pens, pencils, and other stationery supplies to ensure that
+          you have what you need to write down your thoughts, make lists and so much more.</p>
+        <h3>Get the Meesho App for Hassle Free Online Shopping </h3>
+        <p>If you want a seamless shopping experience, you should also consider downloading Meesho’s App. While you may
+          think that it's unnecessary to have an app for shopping, there are plenty of features that will make your life
+          easier. If you find yourself preferring to shop from home, this is the app for you. It makes shopping online
+          easier than ever. You can browse through a plethora of products and even get great deals with more discounts
+          than you can count. You can even share products you like with your friends on social media in just seconds.
+        </p>
+        <h3 style="color: #f980ab;">Download Meesho App Now</h3>
+        <h3>Become a Reseller: Start Making Money In Three Simple Steps</h3>
+        <p>Now you know all about different categories and products Meesho has to offer. It's time to explore and
+          understand Meesho’s reselling option. Apart from using Meesho as an online shopping platform, you also have
+          the option to start your online business with us. Here’s how you can begin your entrepreneurial journey.
+
+          Browse: You can register for a new account or log in to an existing one on the Meesho app or website. Once
+          you're logged in, you can browse through our catalog and select products that you want to purchase at
+          wholesale rates!
+
+          Share: With a single click, you can share catalogs and product images over Whatsapp, Facebook, or Instagram to
+          your contacts using the share option.
+
+          Earn: After sharing the products and catalogs with your customers, you will start getting orders from them.
+          You can add a profit margin to Meesho’s prices and quote that to your customers.This will be your profit. You
+          can quote product prices with an added margin, which will include a profit for you. Once you place the orders
+          on your customer’s behalf, Meesho will take care of the delivery process for you. </p>
+        <h3>Don't Miss Out! Start Shopping Online on Meesho Now</h3>
+        <p>Meesho offers multiple payment options including debit and credit cards, UPI, and COD to help you with a
+          smooth checkout process. If you are unhappy with any of the products you order you can immediately return them
+          and get a full refund with no questions asked. In case you have any queries or concerns, simply send us an
+          email at query@meesho.com. Or you can contact us on social media through Facebook, Instagram, or Twitter.
+          We're here to help you!</p>
+
+
+        <h3 style="color: #f980ab;">Online Shopping</h3>
+        <h4>Home & Living</h4>
+        <p><span> Curtains & Sheers </span>| <span>Round Cushions </span>| <span>Sofa Covers </span>| <span>Cotton
+            Bedsheets</span> |<span> Bedding Sets</span> | <span>Pillow Covers</span> | <span>Decorative Items</span> |
+          <span>Duvet Covers</span> | <span>Blankets</span> | <span>Home Temple </span>| <span>Yoga mats </span>|
+          <span>Bean Bags </span>|<span> Single Bed Sheet </span>| <span>Cushions</span> | <span>Face Towels </span>|
+          <span>Cotton Towel </span>|...</p>
+
+        <h4>Men Ethnicwear</h4>
+        <p><span>Men Dhoti Kurtas </span>|<span> Men Indo Western Dresses</span> | <span>Men Velvet Sherwanis </span>|
+          <span>Men Dhotis</span></p>
+
+        <h4>Women Western Wear</h4>
+        <p><span>Women Frocks </span>| <span>Long Tops Women </span>| <span>Tshirt Dresses</span> | <span>Designer
+            Gown</span> | <span>Pencil Skirts </span>| <span>Women Trousers </span>| <span>Flared Jeans </span>|<span>
+            Women Sweatshirts </span>| <span>Shrugs</span> | <span>Capris</span> | <span>Jacket Dresses</span>|
+          <span>Fancy Ladies Sweater </span>| <span>Chikankari Palazzos </span>|<span> Ankle Length Leggings </span>|
+          <span>Tights </span>|...</p>
+
+        <h4>Women Ethnicwear</h4>
+        <p><span>Silk Saree</span> |<span> Puff Sleeve Blouses </span>| <span>Chikankari Kurtis </span>| <span>Designer
+            Lehenga</span> | <span>Sharara </span>| <span>Phulkari Dupatta</span> | <span>Petticoats </span>|<span>
+            Abaya </span>| <span>Black Kurta</span> |<span> Velvet Shawls </span>| <span>Blouse Piece</span> |<span>
+            Kurti Fabric </span>| <span>Designer Suits</span></p>
+
+        <h4>Women Footwear</h4>
+        <p><span> Women Slippers </span>| <span>Bellies </span>| <span>Juttis & Mojaris</span></p>
+
+        <h4>Women Accessories</h4>
+        <p><span>Hoop Earrings </span>| <span>Stud Earrings Women </span>| <span>Oxidised Ring </span>| <span>Handbags
+          </span>|<span> Umbrellas </span>| <span>Cateye Sunglasses </span>| <span>Jewellery Set</span> |
+          <span>Slingbags</span> | <span>Trolley Bags</span> |<span> Hijabs</span> | <span>Ankle Socks Women </span>|
+          <span>Clutches</span> | <span>Hair Accessories</span> |<span> Maangtika</span> | <span>Pouches </span>|
+          <span>Duffle Bags</span>...</p>
+
+        <h4>Electronics & Accessories</h4>
+        <p><span>Android Smart Watches </span>|<span> On Ear Headphones </span>| <span>Bluetooth Speakers</span> |
+          <span>Bluetooth Earphones </span>| <span>Sport Headphones </span>| <span>CCTV Cameras </span>| <span>Spy
+            Cameras </span>| <span>Keyboard </span>| <span>Laptop Bags </span>| <span>Mouse </span>| <span>Laptop
+            Accessories </span>| <span>Pen Drives </span>| <span>Earphones </span>| <span>Fast Charging</span>...</p>
+
+        <h4>Men Western Wear</h4>
+        <p><span>Cotton Shorts Men </span>|<span> Denim Jeans Men</span> | <span>Formal Trousers Men</span> | <span>Men
+            Active Shorts</span> | <span>Sport Jackets Men </span>| <span>Printed Tshirts </span>| <span>Formal Shirts
+            Men </span>| <span>Sleeveless Sweatshirts Men </span>| <span>Leather Jackets Men</span> | <span>Grey Blazers
+          </span>| <span>Men Sweaters</span> | <span>Sport Tracksuits Men </span>| <span>Vests </span>|...</p>
+
+        <h4>Men Footwear</h4>
+        <p><span>Reebok Sports Shoes Men</span> |<span> Men Sandals </span>|<span> Leather Loafers Men</span></p>
+
+        <h4>Men Accessories</h4>
+        <p><span>Leather Watches Men</span> | <span>Gold Jewellery Men </span>| <span>Hair Spray For Men</span> |
+          <span>Men Keychains </span>| <span>Men Socks</span> |<span> Men Scarves</span> | <span>Men Wrist Bands
+          </span>| <span>Men Crossbody Bags</span> |<span> Men Shirt Studs</span></p>
+
+        <h4>Kids</h4>
+        <p><span>Kids Lunch Boxes</span> |<span> Kids Ethnic Jackets</span> |<span> Kids Blazers </span>| <span>Rompers
+          </span>| <span>Kids Kurtis & Kurtas </span> | <span>Kids Salwar Suit Sets </span>| <span>Kids Ethnic
+            Gowns</span> | <span>Tshirts Boys </span>| <span>Girls Stylish Tops</span></p>
+
+        <h4>Baby</h4>
+        <p><span>Baby Pillows</span> |<span> Baby Towels</span> | <span>Baby Hanging Cradle</span> | <span>Baby Sleeping
+            Bag </span>| <span>Baby Blanket</span></p>
+
+        <h4>Home & Kitchen</h4>
+        <p><span>Toaster</span> |<span> Mixer Grinder</span> | <span>Cookers </span>| <span>Juicer </span>| <span>Food
+            Processors</span> | <span>Roti Maker</span> | <span>Sandwich Maker </span>| <span>Kettles</span> |
+          <span>Hand Blender </span>| <span>Table Cover </span>| <span>Napkins Holder</span> | <span>Kitchen Mat
+          </span>| <span>Kitchen Towel </span>| <span>Aprons </span>| <span>Kitchen Gloves </span>| <span>Racks &
+            Holders</span> |<span> Spice Racks</span> | <span>Jars &</span>...</p>
+
+        <h4>Personal Care & Wellness</h4>
+        <p> <span>Tummy trimmer </span>| <span>Makeup Kits </span>| <span>Hair Color </span>| <span>Hair Steamers
+          </span>| <span>Hair Care</span> | <span>Oral Care </span>| <span>Beard Oil</span> | <span>Deodorants </span>|
+          <span>Eye Lenses</span> | <span>Soap </span>| <span>Oximeter </span>|<span> Bb Cream </span>|<span> Body
+            Scrub</span> | <span>Olive Oils</span> | <span>Talcum Powder</span> |<span> Face Steamers </span>|
+          <span>Compact</span> | <span>Nail Cutter</span> | <span>Lip Balm</span>
+        <p>
+      </div>
+    </div>
+
+  </footer>
 </body>
+
 </html>
 <script src="./scripts/nav.js" type="module"></script>
 <script src="./scripts/index.js"></script>
 
 
 <script>
-  var selectField =  document.querySelector("#selectField");
-  var selectText =  document.querySelector("#selectText");
+  var selectField = document.querySelector("#selectField");
+  var selectText = document.querySelector("#selectText");
   var options = document.getElementsByClassName("options");
   var list = document.getElementById("list");
   var arrowIcon = document.getElementById("arrowIcon");
-  
-  selectField.onclick = function(){
+
+  selectField.onclick = function () {
+    list.classList.toggle("hide");
+    arrowIcon.classList.toggle("rotate");
+  }
+
+  for (option of options) {
+    option.onclick = function () {
+      selectText.innerHTML = this.textContent;
       list.classList.toggle("hide");
       arrowIcon.classList.toggle("rotate");
+    }
   }
-  
-  for(option of options){
-      option.onclick = function(){
-          selectText.innerHTML = this.textContent;
-          list.classList.toggle("hide");
-          arrowIcon.classList.toggle("rotate");
-      }
+  categoryField.onclick = function () {
+    C_list.classList.toggle("C_hide");
+    C_arrow.classList.toggle("rotate");
   }
-  categoryField.onclick = function(){
-        C_list.classList.toggle("C_hide");
-        C_arrow.classList.toggle("rotate");
-    }
 
 
-    genderField.onclick = function(){
-        G_list.classList.toggle("G_hide");
-        G_arrow.classList.toggle("rotate");
-    }
+  genderField.onclick = function () {
+    G_list.classList.toggle("G_hide");
+    G_arrow.classList.toggle("rotate");
+  }
 
-    fabricField.onclick = function(){
-        f_list.classList.toggle("f_hide");
-        f_arrow.classList.toggle("rotate");
-    }
+  fabricField.onclick = function () {
+    f_list.classList.toggle("f_hide");
+    f_arrow.classList.toggle("rotate");
+  }
 
-    colorField.onclick = function(){
-        c_list.classList.toggle("c_hide");
-        c_arrow.classList.toggle("rotate");
-    }
+  colorField.onclick = function () {
+    c_list.classList.toggle("c_hide");
+    c_arrow.classList.toggle("rotate");
+  }
 
-    petField.onclick = function(){
-        pet_list.classList.toggle("pet_hide");
-        pet_arrow.classList.toggle("rotate");
-    }
+  petField.onclick = function () {
+    pet_list.classList.toggle("pet_hide");
+    pet_arrow.classList.toggle("rotate");
+  }
 
-    priceField.onclick = function(){
-        p_list.classList.toggle("p_hide");
-        p_arrow.classList.toggle("rotate");
-    }
+  priceField.onclick = function () {
+    p_list.classList.toggle("p_hide");
+    p_arrow.classList.toggle("rotate");
+  }
 
-    meesho_mallField.onclick = function(){
-        mm_list.classList.toggle("mm_hide");
-        mm_arrow.classList.toggle("rotate");
-    }
-    occassionField.onclick = function(){
-        occ_list.classList.toggle("occ_hide");
-        occ_arrow.classList.toggle("rotate");
-    }
+  meesho_mallField.onclick = function () {
+    mm_list.classList.toggle("mm_hide");
+    mm_arrow.classList.toggle("rotate");
+  }
+  occassionField.onclick = function () {
+    occ_list.classList.toggle("occ_hide");
+    occ_arrow.classList.toggle("rotate");
+  }
 
-    discountField.onclick = function(){
-        D_list.classList.toggle("D_hide");
-        D_arrow.classList.toggle("rotate");
-    }
+  discountField.onclick = function () {
+    D_list.classList.toggle("D_hide");
+    D_arrow.classList.toggle("rotate");
+  }
 
-    ratingField.onclick = function(){
-        R_list.classList.toggle("R_hide");
-        R_arrow.classList.toggle("rotate");
-    }
+  ratingField.onclick = function () {
+    R_list.classList.toggle("R_hide");
+    R_arrow.classList.toggle("rotate");
+  }
 
-    sizeField.onclick = function(){
-        S_list.classList.toggle("S_hide");
-        S_arrow.classList.toggle("rotate");
-    }
+  sizeField.onclick = function () {
+    S_list.classList.toggle("S_hide");
+    S_arrow.classList.toggle("rotate");
+  }
 
-    comboField.onclick = function(){
-        combo_list.classList.toggle("combo_hide");
-        combo_arrow.classList.toggle("rotate");
-    }
+  comboField.onclick = function () {
+    combo_list.classList.toggle("combo_hide");
+    combo_arrow.classList.toggle("rotate");
+  }
 
-    materialField.onclick = function(){
-        M_list.classList.toggle("M_hide");
-        M_arrow.classList.toggle("rotate");
-    }
+  materialField.onclick = function () {
+    M_list.classList.toggle("M_hide");
+    M_arrow.classList.toggle("rotate");
+  }
 
-    bottom_lengthField.onclick = function(){
-        BL_list.classList.toggle("BL_hide");
-        BL_arrow.classList.toggle("rotate");
-    }
+  bottom_lengthField.onclick = function () {
+    BL_list.classList.toggle("BL_hide");
+    BL_arrow.classList.toggle("rotate");
+  }
 
-    bottom_styleField.onclick = function(){
-        BS_list.classList.toggle("BS_hide");
-        BS_arrow.classList.toggle("rotate");
-    }
+  bottom_styleField.onclick = function () {
+    BS_list.classList.toggle("BS_hide");
+    BS_arrow.classList.toggle("rotate");
+  }
 
-    bottom_fabricField.onclick = function(){
-        BF_list.classList.toggle("BF_hide");
-        BF_arrow.classList.toggle("rotate");
-    }
+  bottom_fabricField.onclick = function () {
+    BF_list.classList.toggle("BF_hide");
+    BF_arrow.classList.toggle("rotate");
+  }
 
-    bottom_typeField.onclick = function(){
-        BT_list.classList.toggle("BT_hide");
-        BT_arrow.classList.toggle("rotate");
-    }
+  bottom_typeField.onclick = function () {
+    BT_list.classList.toggle("BT_hide");
+    BT_arrow.classList.toggle("rotate");
+  }
 
-    innerField.onclick = function(){
-        inner_list.classList.toggle("inner_hide");
-        inner_arrow.classList.toggle("rotate");
-    }
+  innerField.onclick = function () {
+    inner_list.classList.toggle("inner_hide");
+    inner_arrow.classList.toggle("rotate");
+  }
 
-    boardField.onclick = function(){
-       board_arrow.classList.toggle("rotate");
-       board_list.classList.toggle("board_hide");
-    }
+  boardField.onclick = function () {
+    board_arrow.classList.toggle("rotate");
+    board_list.classList.toggle("board_hide");
+  }
 
-    tainField.onclick = function(){
-        tain_list.classList.toggle("tain_hide");
-        tain_arrow.classList.toggle("rotate");
-    }
+  tainField.onclick = function () {
+    tain_list.classList.toggle("tain_hide");
+    tain_arrow.classList.toggle("rotate");
+  }
 
-    shadeField.onclick = function(){
-        shade_list.classList.toggle("shade_hide");
-        shade_arrow.classList.toggle("rotate");
-    }
+  shadeField.onclick = function () {
+    shade_list.classList.toggle("shade_hide");
+    shade_arrow.classList.toggle("rotate");
+  }
 
-    loomField.onclick = function(){
-        loom_list.classList.toggle("loom_hide");
-        loom_arrow.classList.toggle("rotate");
-    }
+  loomField.onclick = function () {
+    loom_list.classList.toggle("loom_hide");
+    loom_arrow.classList.toggle("rotate");
+  }
 
-    timeupField.onclick = function(){
-        timeup_list.classList.toggle("timeup_hide");
-        timeup_arrow.classList.toggle("rotate");
-    }
+  timeupField.onclick = function () {
+    timeup_list.classList.toggle("timeup_hide");
+    timeup_arrow.classList.toggle("rotate");
+  }
 
 
-    closeField.onclick = function(){
-        close_list.classList.toggle("close_hide");
-        close_arrow.classList.toggle("rotate");
-    }
+  closeField.onclick = function () {
+    close_list.classList.toggle("close_hide");
+    close_arrow.classList.toggle("rotate");
+  }
 
-    digitField.onclick = function(){
-        digit_list.classList.toggle("digit_hide");
-        digit_arrow.classList.toggle("rotate");
-    }
-    noofField.onclick = function(){
-        noof_list.classList.toggle("noof_hide");
-        noof_arrow.classList.toggle("rotate");
-    }
+  digitField.onclick = function () {
+    digit_list.classList.toggle("digit_hide");
+    digit_arrow.classList.toggle("rotate");
+  }
+  noofField.onclick = function () {
+    noof_list.classList.toggle("noof_hide");
+    noof_arrow.classList.toggle("rotate");
+  }
 
-    lengthField.onclick = function(){
-        length_list.classList.toggle("length_hide");
-        length_arrow.classList.toggle("rotate");
-    }
+  lengthField.onclick = function () {
+    length_list.classList.toggle("length_hide");
+    length_arrow.classList.toggle("rotate");
+  }
 
-    forField.onclick = function(){
-        for_list.classList.toggle("for_hide");
-        for_arrow.classList.toggle("rotate");
-    }
+  forField.onclick = function () {
+    for_list.classList.toggle("for_hide");
+    for_arrow.classList.toggle("rotate");
+  }
 
-    areaField.onclick = function(){
-        area_list.classList.toggle("area_hide");
-        area_arrow.classList.toggle("rotate");
-    }
+  areaField.onclick = function () {
+    area_list.classList.toggle("area_hide");
+    area_arrow.classList.toggle("rotate");
+  }
 
-    rangeField.onclick = function(){
-        range_list.classList.toggle("range_hide");
-        range_arrow.classList.toggle("rotate");
-    }
+  rangeField.onclick = function () {
+    range_list.classList.toggle("range_hide");
+    range_arrow.classList.toggle("rotate");
+  }
 
-    blueField.onclick = function(){
-        blue_list.classList.toggle("blue_hide");
-        blue_arrow.classList.toggle("rotate");
-    }
-    bladeField.onclick = function(){
-        blade_list.classList.toggle("blade_hide");
-        blade_arrow.classList.toggle("rotate");
-    }
+  blueField.onclick = function () {
+    blue_list.classList.toggle("blue_hide");
+    blue_arrow.classList.toggle("rotate");
+  }
+  bladeField.onclick = function () {
+    blade_list.classList.toggle("blade_hide");
+    blade_arrow.classList.toggle("rotate");
+  }
 
-    finishField.onclick = function(){
-        finish_list.classList.toggle("finish_hide");
-        finish_arrow.classList.toggle("rotate");
-    }
+  finishField.onclick = function () {
+    finish_list.classList.toggle("finish_hide");
+    finish_arrow.classList.toggle("rotate");
+  }
 
-    matField.onclick = function(){
-        mat_list.classList.toggle("mat_hide");
-        mat_arrow.classList.toggle("rotate");
-    }
+  matField.onclick = function () {
+    mat_list.classList.toggle("mat_hide");
+    mat_arrow.classList.toggle("rotate");
+  }
 
-    interField.onclick = function(){
-        inter_list.classList.toggle("inter_hide");
-        inter_arrow.classList.toggle("rotate");
-    }
+  interField.onclick = function () {
+    inter_list.classList.toggle("inter_hide");
+    inter_arrow.classList.toggle("rotate");
+  }
 
-    ruledField.onclick = function(){
-        ruled_list.classList.toggle("ruled_hide");
-        ruled_arrow.classList.toggle("rotate");
-    }
+  ruledField.onclick = function () {
+    ruled_list.classList.toggle("ruled_hide");
+    ruled_arrow.classList.toggle("rotate");
+  }
 
-    pageField.onclick = function(){
-        page_list.classList.toggle("page_hide");
-        page_arrow.classList.toggle("rotate");
-    }
+  pageField.onclick = function () {
+    page_list.classList.toggle("page_hide");
+    page_arrow.classList.toggle("rotate");
+  }
 
-    strapField.onclick = function(){
-        SC_list.classList.toggle("SC_hide");
-        SC_arrow.classList.toggle("rotate");
-    }
+  strapField.onclick = function () {
+    SC_list.classList.toggle("SC_hide");
+    SC_arrow.classList.toggle("rotate");
+  }
 
-    displayField.onclick = function(){
-        dis_list.classList.toggle("dis_hide");
-        dis_arrow.classList.toggle("rotate");
-    }
+  displayField.onclick = function () {
+    dis_list.classList.toggle("dis_hide");
+    dis_arrow.classList.toggle("rotate");
+  }
 
-    dialField.onclick = function(){
-        dial_list.classList.toggle("dial_hide");
-        dial_arrow.classList.toggle("rotate");
-    }
-    baseField.onclick = function(){
-        base_list.classList.toggle("base_hide");
-        base_arrow.classList.toggle("rotate");
-    }
+  dialField.onclick = function () {
+    dial_list.classList.toggle("dial_hide");
+    dial_arrow.classList.toggle("rotate");
+  }
+  baseField.onclick = function () {
+    base_list.classList.toggle("base_hide");
+    base_arrow.classList.toggle("rotate");
+  }
 
 
     // addField.onclick = function(){
     //     add_list.classList.toggle("add_hide");
     //     add_arrow.classList.toggle("rotate");
     // }
-  </script>
-
+</script>
