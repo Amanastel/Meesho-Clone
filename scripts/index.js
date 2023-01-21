@@ -14,7 +14,7 @@ let global=[];
 
 
 
-let url = "https://astel-api.vercel.app/alldata"
+let url = "https://meesho.onrender.com/allData"
 
 function fetchData(url){
 fetch(url)
@@ -122,7 +122,7 @@ star.addEventListener("click",function(){
 
 let men = document.getElementById("menp");
 men.addEventListener("click",()=>{
-    fetchData("https://astel-api.vercel.app/men")
+    fetchData("https://meesho.onrender.com/men")
 .then((res)=>{
     return res.json()
 })
@@ -135,7 +135,7 @@ men.addEventListener("click",()=>{
 
 let women = document.getElementById("womenp");
 women.addEventListener("click",()=>{
-    fetchData("https://astel-api.vercel.app/women")
+    fetchData("https://meesho.onrender.com/women")
 .then((res)=>{
     return res.json()
 })
