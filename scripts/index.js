@@ -27,8 +27,7 @@ fetch(url)
     displayData(global)
 })
 }
-// let localData=localStorage.setItem("inner-div",JSON.)
-
+let card_daa=JSON.parse(localStorage.getItem("inner_div"))||[];
 
 function displayData(data){
 main_section.innerHTML= null
@@ -36,6 +35,12 @@ main_section.innerHTML= null
 data.forEach((ele) => {
 let div = document.createElement("div")
 div.setAttribute("class","inner-div")
+div.addEventListener("click",()=>{
+   card_daa=ele;
+   localStorage.setItem("inner_div",JSON.stringify(card_daa))
+   // console.log(ele);
+   window.location.href="product.html";
+})
 
 let divImg = document.createElement("div")
 divImg.setAttribute("class","inner-div-img")
