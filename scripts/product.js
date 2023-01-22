@@ -83,3 +83,46 @@ window.addEventListener("load",()=>{
     fetchData(url)
     //displayData();
 })
+
+
+let card_daa=JSON.parse(localStorage.getItem("inner_div"))||[];
+// let img=document.getElementById("image");
+// img.setAttribute("src",card_daa.image)
+// p.innner.text=card_daa.price;
+
+let item = document.getElementById("item_img");
+item.setAttribute("src",card_daa.image);
+
+let Name = document.createElement("p");
+Name.innerText=card_daa.name;
+
+let Price = document.createElement("p");
+Price.innerText=card_daa.price;
+
+let Review = document.createElement("p");
+Review.innerText=card_daa.review;
+
+let Rating = document.createElement("p");
+Rating.innerText=card_daa.rating;
+
+let Free_Delivery = document.createElement("p");
+Free_Delivery.innerText=card_daa.free;
+
+
+document.querySelector("#product").append(Name,Free_Delivery,Rating,Review,Price);
+
+let subName = document.createElement("p");
+subName.innerText=card_daa.name;
+
+let subPrice = document.createElement("p");
+subPrice.innerText=card_daa.price;
+
+let subReview = document.createElement("p");
+subReview.innerText=card_daa.review;
+
+let subRating = document.createElement("p");
+subRating.innerText=card_daa.rating;
+
+let subFree_Delivery = document.createElement("p");
+subFree_Delivery.innerText=card_daa.free;
+document.getElementById("subproduct").append(subName,subFree_Delivery,subRating,subReview,subPrice);

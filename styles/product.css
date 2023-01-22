@@ -40,9 +40,11 @@ button{
 }
 #product{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 100px;
+    height: 200px;
     margin-bottom: 15px;
     border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
 }
 #size{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -63,7 +65,7 @@ button{
 }
 #three{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 400px;
+    height: 250px;
     margin-bottom: 10px;
     padding: 5px;
     padding-left: 20px;
@@ -82,12 +84,65 @@ margin-left: 10px;
 }
 #five{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 400px;
+    height: 280px;
     margin-bottom: 10px;
     padding: 5px;
     padding-left: 20px;
     border-radius: 5px;
 }
+/* #rr{
+    border: 1px solid black;
+} */
+ #dot{
+    width: 20%;
+    margin-right: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#colors{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    justify-content: center; 
+} 
+.row{
+    width: 70%;
+    height: 200px;
+    margin-left: 5px;
+    padding-top: 15px;
+}
+.side{
+    float: left; 
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.middle{
+    float: left; 
+    width: 40%;
+    margin-top: 10px; 
+}
+.right{
+    text-align: right;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+    margin-left: 5px;
+}
+.bar-container{
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+.bar-5{width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4{width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3{width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2{width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1{width: 15%; height: 18px; background-color: #f44336;}
 #sold{
     display: flex;
 }
@@ -111,16 +166,16 @@ margin-left: 10px;
 }
 #bottom{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border: 1px solid black;
-    width: 90%;
+    width: 85%;
     margin: auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+    border-radius: 5px;
 }
 #people{
-    margin-left: 5%;
+    margin-left: 7.5%;
 }
 
 /* rough see */
