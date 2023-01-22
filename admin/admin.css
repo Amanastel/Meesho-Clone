@@ -1,5 +1,7 @@
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -436,4 +438,11 @@ nav .profile-details i{
     left: 60px;
     width: calc(100% - 60px);
   }
+}
+
+
+#form-id{
+  width: 100%;
+  /* border: 2px solid red; */
+  padding-bottom: 50px;
 }

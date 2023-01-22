@@ -8,230 +8,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-#logoM{
-margin-left: 40px;
-}
-.right-div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-    #top_div{
-    width: 70%;
-    height: 1530px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-#photo{
-    width: 40%;
-    height: 800px;
-    margin-left: 40px;
-}
-#subimg{
-    height: 500px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 5px;
-}
-#details{
-    /* border: 1px solid black; */
-    width: 50%;
-    height: 1000px;
-}
-#photo img{
-    height: 500px;
-    margin-left: 20px;
-}
-button{
-    padding: 10px 50px 10px 50px ;
-    margin: 20px;
-    font-size: 15px;
-    border-radius: 5px;
-}
-#btn{
-    background-color: #f43397;
-    color: white;
-    border: none;
-}
-#btns{
-    display: flex;
-}
-#product{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 100px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-#size{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 120px;
-    margin-bottom: 15px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 5px;
-}
-#btnsize{
-    display: flex;
-}
-#btnsize button{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 15px;
-    border-width: 1px;
-}
-#three{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 400px;
-    margin-bottom: 10px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 5px;
-}
-#four{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 5px;
-}
-#four>h3{
-margin-left: 10px;
-}
-#five{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 400px;
-    margin-bottom: 10px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 5px;
-}
-#sold{
-    display: flex;
-}
-#six{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 100px;
-    margin-bottom: 10px;
-    padding: 35px;
-    background-color: rgb(231,238,255);
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-evenly;
-}
-#seven{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 50px;
-    display: flex;
-    border-radius: 5px;
-    margin: auto;
-    justify-content: center;
-}
-#bottom{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border: 1px solid black;
-    width: 90%;
-    margin: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-#people{
-    margin-left: 5%;
-}
+    #logoM {
+        margin-left: 40px;
+    }
 
-/* rough see */
+    .right-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 
-.inner-div {
-    width: 98%;
-    height: 96%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
-    margin: auto;
-    text-align: center;
-    border-radius: 12px;
-  }
-  .inner-div-img {
-    width: 100%;
-    height: 200px;
-    margin: auto;
-    /* border: 2px solid rgb(87, 8, 21); */
-  }
-  .inner-div-img img {
-    width: 100%;
-    height: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-  }
-  
-  .title {
-    margin-left: 3%;
-    color: rgb(59, 57, 57);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .price {
-    /* margin-left: 3%; */
-    color: rgb(51, 51, 51);
-    font-weight: bolder;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: larger;
-    font-size: 24px;
-    line-height: 32px;
-    
-    
-  }
-  
-  .span {
-    color: rgb(165, 156, 156);
-    font-size: small;
-    margin-left: 2%;
-  }
-  
-  .free {
-    width: 100px;
-    height: auto;
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    color: rgb(105, 99, 99);
-    background-color: rgb(236, 223, 223);
-    font-size: smaller;
-    padding: 2%;
-    margin-left: 4%;
-  }
-  
-  .rating {
-    width: 70px;
-    height: 30px;
-    color: white;
-    margin-top: 4%;
-    padding: 2%;
-    border-radius: 10px;
-    margin-left: 4%;
-    margin-bottom: 10px;
-    display: inline-flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    border-radius: 16px;
-    padding: 4px 8px;
-    background: rgb(35, 187, 117);
-    fill: rgb(255, 255, 255);
-  }
- .review{
-    /* border: 2px solid red; */
-    margin: auto;
- }
-  .div2 {
-    width: 90%;
-    height: auto;
-    /* margin-top: 4%; */
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    margin-bottom: 10px;
-  }
+    #top_div {
+        width: 70%;
+        height: 1530px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #photo {
+        width: 40%;
+        height: 800px;
+        margin-left: 40px;
+    }
+
+    #subimg {
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-radius: 5px;
+    }
+
+    #details {
+        /* border: 1px solid black; */
+        width: 50%;
+        height: 1000px;
+    }
+
+    #photo img {
+        height: 500px;
+        margin-left: 20px;
+    }
+
+    button {
+        padding: 10px 50px 10px 50px;
+        margin: 20px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    #btn {
+        background-color: #f43397;
+        color: white;
+        border: none;
+    }
+
+    #btns {
+        display: flex;
+    }
+
+    #product {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 100px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    #size {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 120px;
+        margin-bottom: 15px;
+        padding: 5px;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+
+    #btnsize {
+        display: flex;
+    }
+
+    #btnsize button {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 15px;
+        border-width: 1px;
+    }
+
+    #three {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 400px;
+        margin-bottom: 10px;
+        padding: 5px;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+
+    #four {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 150px;
+        margin-bottom: 10px;
+        padding: 5px;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+
+    #four>h3 {
+        margin-left: 10px;
+    }
+
+    #five {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 400px;
+        margin-bottom: 10px;
+        padding: 5px;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+
+    #sold {
+        display: flex;
+    }
+
+    #six {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 35px;
+        background-color: rgb(231, 238, 255);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #seven {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        height: 50px;
+        display: flex;
+        border-radius: 5px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #bottom {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border: 1px solid black;
+        width: 90%;
+        margin: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    #people {
+        margin-left: 5%;
+    }
+
+    /* rough see */
+
+    .inner-div {
+        width: 98%;
+        height: 96%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+        margin: auto;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .inner-div-img {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        /* border: 2px solid rgb(87, 8, 21); */
+    }
+
+    .inner-div-img img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .title {
+        margin-left: 3%;
+        color: rgb(59, 57, 57);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .price {
+        /* margin-left: 3%; */
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: larger;
+        font-size: 24px;
+        line-height: 32px;
+
+
+    }
+
+    .span {
+        color: rgb(165, 156, 156);
+        font-size: small;
+        margin-left: 2%;
+    }
+
+    .free {
+        width: 100px;
+        height: auto;
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        color: rgb(105, 99, 99);
+        background-color: rgb(236, 223, 223);
+        font-size: smaller;
+        padding: 2%;
+        margin-left: 4%;
+    }
+
+    .rating {
+        width: 70px;
+        height: 30px;
+        color: white;
+        margin-top: 4%;
+        padding: 2%;
+        border-radius: 10px;
+        margin-left: 4%;
+        margin-bottom: 10px;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 16px;
+        padding: 4px 8px;
+        background: rgb(35, 187, 117);
+        fill: rgb(255, 255, 255);
+    }
+
+    .review {
+        /* border: 2px solid red; */
+        margin: auto;
+    }
+
+    .div2 {
+        width: 90%;
+        height: auto;
+        /* margin-top: 4%; */
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        margin-bottom: 10px;
+    }
+
+    .delEdit {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        /* border: 1px solid rgb(34, 34, 28); */
+        
+    }
+
+    .delEdit button {
+        width: 49%;
+        padding: 0;
+        /* margin: 0; */
+        outline: none;
+        border: 1px solid blueviolet;
+        
+    }
 </style>
+
 <body>
     <div class="sidebar">
         <div class="logo-details">
@@ -247,9 +294,9 @@ margin-left: 10px;
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" id="add_product">
                     <i class='bx bx-box'></i>
-                    <span class="links_name">Product</span>
+                    <span class="links_name">Add Product</span>
                 </a>
             </li>
             <li>
@@ -333,7 +380,7 @@ margin-left: 10px;
             <div class="sales-boxes">
                 <div class="recent-sales box">
                     <div class="title">Recent Sales</div>
-                    
+
 
                     <!-- <div class="sales-details">
                         <ul class="details">
@@ -394,8 +441,50 @@ margin-left: 10px;
                     </div>
                 </div>
                 <div class="top-sales box">
-                    <div class="title">Total Seling Price</div>
+                    
+
+                    <div id="form-id">
+                        <form action="" id="main_form">
+                            <label for="product_id">Product Id</label>
+                            <input type="text" id="product_id" placeholder="Enter Product Id">
+                            <br>
+                            <label for="product_image">Product Image</label>
+                            <input type="text" id="product_image" placeholder="Enter Image Url">
+                            <br>
+                            <label for="product_name">Product Name</label>
+                            <input type="text" id="product_name" placeholder="Enter Product Name">
+                            <br>
+                            <label for="product_price">Product Price</label>
+                            <input type="number" id="product_price" placeholder="Enter Product price">
+                            <br>
+                            <label for="product_rating">Product rating</label>
+                            <input type="number" id="product_rating" placeholder="Enter Product rating">
+                            <br>
+                            <label for="product_review">Product review</label>
+                            <input type="number" id="product_review" placeholder="Enter Product review">
+                            <br>
+                            <label for="product_type" id="product_type_label">Product Type</label>
+                            <input type="text" id="product_type" placeholder="Enter Product type">
+                            <br>
+                            <label for="priority" id="">Change</label>
+                            <select id="priority">
+                                <option>--Select One--</option>
+                                <option value="update">Edit Product</option>
+                                <option value="add">Add Product</option>
+                            </select>
+                            <input type="submit" placeholder="Submit" name="submit_name" id="submit_id">
+                        </form>
+                    </div>
+
+
                     <ul class="top-sales-details">
+                        <div class="title">Total Seling Price</div>
+                        <li>
+                            <a href="#">
+                                <span class="product">All Product price</span>
+                            </a>
+                            <span class="price" id="allProPrice">₹0</span>
+                        </li>
                         <li>
                             <a href="#">
                                 <span class="product">Mens all Product price</span>
@@ -456,15 +545,15 @@ margin-left: 10px;
         </div>
     </section>
     <script>
-        let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".sidebarBtn");
-        sidebarBtn.onclick = function () {
-            sidebar.classList.toggle("active");
-            if (sidebar.classList.contains("active")) {
-                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-            } else
-                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-        }
+        // let sidebar = document.querySelector(".sidebar");
+        // let sidebarBtn = document.querySelector(".sidebarBtn");
+        // sidebarBtn.onclick = function () {
+        //     sidebar.classList.toggle("active");
+        //     if (sidebar.classList.contains("active")) {
+        //         sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        //     } else
+        //         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        // }
     </script>
     <script src="./admin.js"></script>
 </body>
