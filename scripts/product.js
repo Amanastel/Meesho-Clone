@@ -1,5 +1,8 @@
 let main_section = document.querySelector("#bottom")
 let global=[];
+let btn = document.getElementById("btnB")
+
+
 
 
 
