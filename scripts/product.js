@@ -1,7 +1,13 @@
 let main_section = document.querySelector("#bottom")
 let global=[];
 
+let addToCart = document.getElementById("cartBtn");
+let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
+let buyNow = document.getElementById("btn")
+buyNow.addEventListener("click", () => {
+    window.location.href = "checkout.html";
+});
 
 let url = "https://astel-api.vercel.app/women"
 
@@ -66,6 +72,29 @@ rating.setAttribute("class","rating")
 let reviews = document.createElement("p")
 reviews.innerText = `${ele.review}`
 reviews.setAttribute("class","review")
+
+addToCart.addEventListener("click", () => {
+   let isAdded = cartData.find((el) => el.name == ele.name);
+   if(isAdded) {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops..',
+        text: 'Product Already In The Cart',
+        footer: '<a href="cart.html">Check The Cart</a>'
+      })
+   }
+   else {
+    cartData.push({...ele,quantity:1});
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    Swal.fire({
+        position: 'top',
+        icon: 'success',
+        title: 'Product Added To The Cart',
+        showConfirmButton: false,
+        timer: 1500
+      })
+   }
+});
 
 div2.append(rating,reviews)
 divImg.append(img)
