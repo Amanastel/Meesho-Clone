@@ -60,7 +60,7 @@ function displayData(data) {
     data.forEach((ele) => {
         let div = document.createElement("div")
         div.setAttribute("class", "inner-div")
-        
+
         let divImg = document.createElement("div")
         divImg.setAttribute("class", "inner-div-img")
         let img = document.createElement("img")
@@ -214,72 +214,56 @@ function displayData(data) {
     }
 
 
-    menDataApi('https://meesho.onrender.com/men')
-    woMenDataApi('https://meesho.onrender.com/women')
-    wanotherData('https://meesho.onrender.com/allData')
+    // menDataApi('https://meesho.onrender.com/men')
+    // woMenDataApi('https://meesho.onrender.com/women')
+    // wanotherData('https://meesho.onrender.com/allData')
+    let n = 0
+    fetch('https://meesho.onrender.com/women')
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            global = data;
+            womenData.innerText = data.length
 
-    function menDataApi(url) {
-        menPrice.innerHTML = null
-        let n = 0
-        fetch(url)
-            .then((res) => {
-                return res.json()
-            })
-            .then((data) => {
-                count += data.length
-                allProduct.push(data)
-                // console.log(allProduct.flat().length)
-                // count = allProduct.flat().length
-                // console.log(count)
-                menData.innerText = count
-                data.forEach((el) => {
-                    n += +el.price
-                })
-
-                menPrice.innerText = '₹' + n
-
-            })
-    }
-    function woMenDataApi(url) {
-        woMenPrice.innerHTML = null
-        let n = 0
-        fetch(url)
-            .then((res) => {
-                return res.json()
-            })
-            .then((data) => {
-                count += data.length
-                womenData.innerText = count
-
-                data.forEach((el) => {
-                    n += +el.price
-                })
-
-                woMenPrice.innerText = '₹' + n
+            data.forEach((el) => {
+                n += +el.price
             })
 
-    }
-    function wanotherData(url) {
-        anotherData.innerHTML = null
-        let n = 0
-        fetch(url)
-            .then((res) => {
-                return res.json()
+            woMenPrice.innerText = '₹' + n
+
+        })
+    let m = 0
+    fetch('https://meesho.onrender.com/men')
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            global = data;
+            menData.innerText = data.length
+
+            data.forEach((el) => {
+                m += +el.price
             })
-            .then((data) => {
-                count += data.length
-                womenData.innerText = count
+            menPrice.innerText = '₹' + m
 
-                data.forEach((el) => {
-                    n += +el.price
-                })
-
-                allProPrice.innerText = '₹' + n
+        })
+    let all = 0
+    fetch('https://meesho.onrender.com/allData')
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            global = data;
+            data.forEach((el) => {
+                all += +el.price
             })
-    }
+            allProPrice.innerText = '₹' + all
+            anotherData.innerText = all
 
-
+        })
 }
+
 window.addEventListener("load", () => {
     fetchData()
     // displayData()

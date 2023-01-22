@@ -342,9 +342,7 @@
 
     apiCall(localData)
     function apiCall(data) {
-
         product.innerHTML = null
-
         let total = 0
         data.forEach((element, index) => {
             total = total + (element.quantity * element.price)
@@ -408,12 +406,11 @@
 
             btn.addEventListener("click", () => {
                 data.splice(index, 1);
-                apiCall(data);
-
+                
                 // pricee.innerText = (element.quantity*element.price)
-
                 localStorage.setItem("cart", JSON.stringify(data))
-
+                apiCall(data);
+                
             })
             mainBox.append(img, item, price, details, category, btn, increment, quantity, decrement)
             product.append(mainBox)
