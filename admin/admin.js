@@ -280,10 +280,6 @@ function displayData(data) {
 
 
 }
-
-
-
-
 window.addEventListener("load", () => {
     fetchData()
     // displayData()

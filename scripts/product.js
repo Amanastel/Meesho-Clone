@@ -99,10 +99,9 @@ addToCart.addEventListener("click", () => {
    }
 });
 
-div2.append(rating,reviews)
+// div2.append(rating,reviews)
 divImg.append(img)
 div.append(divImg,title,price,Free,div2)
-
 main_section.append(div)
 
 });
