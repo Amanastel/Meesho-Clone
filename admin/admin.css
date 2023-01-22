@@ -405,6 +405,11 @@ nav .profile-details i{
   .home-content .sales-boxes .sales-details{
     width: 560px;
   }
+  .right-div{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+  } 
 }
 @media (max-width: 550px) {
   .overview-boxes .box{
@@ -438,6 +443,11 @@ nav .profile-details i{
     left: 60px;
     width: calc(100% - 60px);
   }
+  .right-div{
+    display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+  } 
 }
 
 
