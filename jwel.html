@@ -9,10 +9,11 @@
   Jewellery Set
   </title>
   <link rel="icon" href="./images/meesho_icon.jpg" />
-  <link rel="stylesheet" href="./styles/navbar.css" />
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/navbar.css"/>
+  <link rel="stylesheet" href="/styles/jwel.css"/>
+  <!-- <link rel="stylesheet" href="./styles/index.css"> -->
   <link rel="stylesheet" href="styles\footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> -->
 </head>
 
 <body>
@@ -1821,6 +1822,24 @@
   }
 
 
+  // let JewelleryAndAccessories = document.getElementById("JewelleryAndAccessories")
+  let kids = document.getElementById("kids")
+  let astel = document.getElementById("men")
+  let womenEthick = document.getElementById("womenEthic")
+
+  // JewelleryAndAccessories.addEventListener("click", () => {
+  //   window.location.href = "jwel.html";
+  //   console.log(2233)
+  // })
+  kids.addEventListener("click",()=>{
+    window.location.href = "kid.html";
+  })
+  astel.addEventListener("click", () => {
+    window.location.href = "mens.html";
+  })
+  womenEthick.addEventListener("click", () => {
+    window.location.href = "womens.html";
+  })
     // addField.onclick = function(){
     //     add_list.classList.toggle("add_hide");
     //     add_arrow.classList.toggle("rotate");

@@ -14,7 +14,7 @@ let global = [];
 
 
 
-let url = "https://meesho.onrender.com/allData"
+let url = "https://meesho.onrender.com/allData?_limit=40"
 
 function fetchData(url) {
    fetch(url)
