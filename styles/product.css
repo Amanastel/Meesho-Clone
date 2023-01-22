@@ -1,9 +1,13 @@
 #top_div{
     width: 70%;
-    height: 1530px;
+    height: 1300px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+}
+#sold>img{
+    width: 50px;
 }
 #photo{
     width: 40%;
@@ -148,13 +152,17 @@ margin-left: 10px;
 }
 #six{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    height: 100px;
+    height: 150px;
     margin-bottom: 10px;
     padding: 35px;
     background-color: rgb(231,238,255);
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
+}
+#six>div>img{
+    margin-left: 20px;
+    width: 50px;
 }
 #seven{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
