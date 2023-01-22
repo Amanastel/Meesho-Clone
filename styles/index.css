@@ -2834,3 +2834,40 @@ hr{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
   }
+
+
+
+  @media only screen and (min-width: 399px) and (max-width: 991px) { 
+    
+
+    .main-div{
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .right-div{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+  }
+
+
+  @media only screen and (min-width: 10px) and (max-width: 400px) { 
+    
+
+    .main-div{
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .right-div{
+      width: 70%;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+
+  }
