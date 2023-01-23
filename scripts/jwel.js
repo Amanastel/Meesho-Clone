@@ -14,7 +14,7 @@ let global = [];
 
 
 
-let url = "https://meesho.onrender.com/allData?_limit=40"
+let url = "https://meesho.onrender.com/jewelry"
 
 function fetchData(url) {
    fetch(url)
@@ -146,29 +146,6 @@ women.addEventListener("click", () => {
       })
 })
 
-let girls = document.getElementById("girlsp");
-girls.addEventListener("click",()=>{
-    fetchData("https://astel-api.vercel.app/women")
-.then((res)=>{
-    return res.json()
-})
-.then((data)=>{
-    global=data;
-})
-})
-
-let boys = document.getElementById("boysp");
-boys.addEventListener("click",()=>{
-    fetchData("https://astel-api.vercel.app/men")
-.then((res)=>{
-    return res.json()
-})
-.then((data)=>{
-    global=data;
-    //console.log(global)
-    // displayData(global)
-})
-})
 
 let priceone = document.getElementById("priceone");
 priceone.addEventListener("click", () => {

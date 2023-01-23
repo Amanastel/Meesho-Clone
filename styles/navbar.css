@@ -24,6 +24,10 @@ img {
   align-items: center;
   justify-content: space-between;
   font-weight: 400;
+  position: sticky;
+  top: 0;
+  z-index: 102;
+  background-color: white;
 }
 .headerLeft,
 .headerRight {
