@@ -14,6 +14,27 @@ padding-top: 30px;
   );
 }
 
+header {
+  height: 75px;
+  border-bottom: 0.1px solid grey;
+  padding: 0 10px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
 #main-card {
 border-radius: 10px;
 height: 750px;

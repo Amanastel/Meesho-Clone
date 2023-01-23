@@ -54,12 +54,13 @@ function displayData(data) {
         price.innerText = `₹${ele.price}`
         price.setAttribute("class", "price")
 
+
         let span = document.createElement("span")
         span.innerHTML = document.createElement("p")
         span.innerText = "onwards"
         span.setAttribute("class", "span")
 
-        price.append(span)
+        // price.append(span)
 
         let Free = document.createElement("div")
         Free.innerText = "Free Delivery"
@@ -76,7 +77,37 @@ function displayData(data) {
         reviews.innerText = `${ele.review}`
         reviews.setAttribute("class", "review")
 
+        // let addToeCart = 344
         addToCart.addEventListener("click", () => {
+            let dub = JSON.parse(localStorage.getItem("cart"));
+            if (dub === null) dub = [];
+            let isAdleadyInCart = false;
+            for (let i = 0; i < dub.length; i++) {
+                if (dub[i].id === ele.id) {
+                    isAdleadyInCart = true;
+                    break;
+                };
+            }
+            if (isAdleadyInCart === true) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops..',
+                    text: 'Product Already In The Cart',
+                    footer: '<a href="cart.html">Check The Cart</a>'
+                })
+            }
+            else {
+                dub.push({ ...element, quantity: 1 });
+                localStorage.setItem("cart", JSON.stringify(dub))
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops..',
+                    text: 'Product Already In The Cart',
+                    footer: '<a href="cart.html">Check The Cart</a>'
+                })
+            }
+
+
             let isAdded = cartData.find((el) => el.name == ele.name);
             if (isAdded) {
                 Swal.fire({
@@ -138,7 +169,8 @@ let Rating = document.createElement("p");
 Rating.innerText = card_daa.rating;
 
 let Free_Delivery = document.createElement("p");
-Free_Delivery.innerText = card_daa.free;
+Free_Delivery.innerText = card_daa.status;
+
 
 
 document.querySelector("#product").append(Name, Free_Delivery, Rating, Review, Price);
@@ -156,5 +188,53 @@ let subRating = document.createElement("p");
 subRating.innerText = card_daa.rating;
 
 let subFree_Delivery = document.createElement("p");
-subFree_Delivery.innerText = card_daa.free;
+subFree_Delivery.innerText = card_daa.status;
 document.getElementById("subproduct").append(subName, subFree_Delivery, subRating, subReview, subPrice);
+
+
+
+// fetch("https://meesho.onrender.com/women")
+//     .then((res) => {
+//         return res.json()
+//     })
+//     .then((data) => {
+//         global = data;
+//         apiCall(global)
+//     })
+// function apiCall(data) {
+//     console.log(data)
+//     data.forEach((ele) => {
+//         addToCart.addEventListener("click", () => {
+//             // console.log(09)
+//             let dub = JSON.parse(localStorage.getItem("cart"));
+//             if (dub === null) dub = [];
+//             let isAdleadyInCart = false;
+//             for (let i = 0; i < dub.length; i++) {
+//                 if (dub[i].id === ele.id) {
+//                     isAdleadyInCart = true;
+//                     break;
+//                 };
+//             }
+//             if (isAdleadyInCart === true) {
+//                 Swal.fire({
+//                     icon: 'error',
+//                     title: 'Oops..',
+//                     text: 'Product Already In The Cart',
+//                     footer: '<a href="cart.html">Check The Cart</a>'
+//                 })
+//             }
+//             else {
+//                 dub.push({ ...ele, quantity: 1 });
+//                 localStorage.setItem("cart", JSON.stringify(dub))
+//                 Swal.fire({
+//                     icon: 'error',
+//                     title: 'Oops..',
+//                     text: 'Product Already In The Cart',
+//                     footer: '<a href="cart.html">Check The Cart</a>'
+//                 })
+//             }
+//         });
+//     })
+
+// }
+
