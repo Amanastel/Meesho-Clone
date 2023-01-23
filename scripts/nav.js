@@ -57,20 +57,20 @@ formInputEl.addEventListener("submit", (e) => {
 })
 
 /*function reuble*****/
-function renderSubMenu(id,data){
+function renderSubMenu(id, data) {
     let temp = document.getElementById(id)
-function TempFunc(){
-   return data.map(el =>{
-        let list = ""; 
-        list = el.data.map(element => `<p>${element}</p>`).join(" ")    
-       return `
+    function TempFunc() {
+        return data.map(el => {
+            let list = "";
+            list = el.data.map(element => `<p>${element}</p>`).join(" ")
+            return `
         <div class="column">
             <h4>${el.heading}</h4>
             ${list}
         </div>
        `
-    }).join("")
-}
+        }).join("")
+    }
     temp.innerHTML = TempFunc()
 }
 
@@ -80,31 +80,31 @@ function TempFunc(){
 
 
 /****womenEthic */
-renderSubMenu("womenEthic",WomenEthnic)
+renderSubMenu("womenEthic", WomenEthnic)
 
 /****WomenWestern */
-renderSubMenu("womenWestern",WomenWestern)
+renderSubMenu("womenWestern", WomenWestern)
 
 //Men 
-renderSubMenu("men",Men)
+renderSubMenu("men", Men)
 
 /***kids */
-renderSubMenu("kids",Kids)
+renderSubMenu("kids", Kids)
 
 /**home % kitchen */
-renderSubMenu("HomeAndKitchen",HomeAndKitchen)
+renderSubMenu("HomeAndKitchen", HomeAndKitchen)
 
 /**beauty and health */
-renderSubMenu("beautyAndHealth",BeautyHealth)
+renderSubMenu("beautyAndHealth", BeautyHealth)
 
 // Jewellery & Accessories
-renderSubMenu("JewelleryAndAccessories",JewelleryAccessories)
+renderSubMenu("JewelleryAndAccessories", JewelleryAccessories)
 
 // Bags & Footwear
-renderSubMenu("BagsFootWarId",BagsFootwear)
+renderSubMenu("BagsFootWarId", BagsFootwear)
 
 // Electronics
-renderSubMenu("ElectronicsId",Electronics)
+renderSubMenu("ElectronicsId", Electronics)
 
 
 
