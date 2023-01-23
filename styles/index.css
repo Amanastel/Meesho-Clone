@@ -211,7 +211,9 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-
+.cartBtn{
+  cursor: pointer;
+}
 .title {
   margin-left: 3%;
   color: gray;
