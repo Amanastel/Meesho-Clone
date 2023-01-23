@@ -13,11 +13,16 @@
     width: 40%;
     height: 800px;
     margin-left: 40px;
+    
 }
 #subimg{
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 5px;
+    width: 90%;
+}
+#item_img{
+    width: 90%;
 }
 #details{
     /* border: 1px solid black; */
