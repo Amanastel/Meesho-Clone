@@ -12,7 +12,12 @@ let per = document.querySelector("#percentage");
 let main_section = document.querySelector(".right-div")
 let global = [];
 
+let cartBtn = document.getElementById("cardBtn")
+// console.log(cartBtn)
 
+cartBtn.addEventListener("click",()=>{
+   window.location.href = "cart.html"
+})
 
 let url = "https://meesho.onrender.com/allData?_limit=40"
 
@@ -23,7 +28,7 @@ function fetchData(url) {
       })
       .then((data) => {
          global = data;
-         console.log(global)
+         // console.log(global)
          displayData(global)
       })
 }
