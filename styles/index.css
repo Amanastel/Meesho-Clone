@@ -2537,6 +2537,28 @@ hr{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
 } */
 }
+
+header {
+  height: 75px;
+  border-bottom: 0.1px solid grey;
+  padding: 0 10px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
 #displayField img{
   width: 12px;
   /* padding-left: 90px; */
