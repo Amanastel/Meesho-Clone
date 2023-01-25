@@ -47,6 +47,25 @@ Tools - API, Bootstrap, Firebase, crud operations
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aman-astel-18a543198/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AmanAstel)
 
+
+# Features
+
+You will be able to create your account using login and signup option with firebase, used API calls for validating user credentials.
+
+Used Reusable Components in landing page such that it can be reused in any other pages easily without repeatation.
+
+You can choose a product which you want to buy and add to cart section.
+
+One can Sort and Filter the product according to the prices and categories of different products.
+
+User can also select and remove items from cart section and make payment through card.
+
+All the data is stored in the localStorage of the User.
+
+# Instructions to Run the Code
+Clone my repository https://github.com/Amanastel/far-wealth-6961.git Open that code in your VS code index.html Open the index.html on Live server Then you can Navigate through other pages from Landing page like signin.html, cart.html, product.html, admin.html etc.
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at amanastel@icloud.com 
